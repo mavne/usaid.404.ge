@@ -77,3 +77,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/_markup/assets/fonts/roboto-regular/Roboto_GEOMt.eot');
+    src: url('/_markup/assets/fonts/roboto-regular/Roboto_GEOMt.eot?#iefix') format('embedded-opentype'),
+        url('/_markup/assets/fonts/roboto-regular/Roboto_GEOMt.woff2') format('woff2'),
+        url('/_markup/assets/fonts/roboto-regular/Roboto_GEOMt.woff') format('woff'),
+        url('/_markup/assets/fonts/roboto-regular/Roboto_GEOMt.ttf') format('truetype'),
+        url('/_markup/assets/fonts/roboto-regular/Roboto_GEOMt.svg#Roboto_GEOMt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

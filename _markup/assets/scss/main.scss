@@ -44,3 +44,409 @@ body{
 	@include makeNull;
 }
 
+header{
+	@include makeNull;
+}
+
+header .top{
+	@include makeNull;
+	width: 100%;
+	height: 110px;
+	background-color: $white;
+	@include dropShadow('0px', '3px', '15px', '0px', 'rgba(0,0,0,0.05)');
+}
+
+header .top .center{
+	position: relative;
+}
+
+header .top .center .logos-box{
+	@include makeNull;
+	width: 50%;
+	height: 110px;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+header .top .center .logos-box a{
+	@include makeNull;
+	display: block;
+	float: left;
+	text-decoration: none;
+	margin-right: 45px;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	text-indent: -9999px;
+	@include trans('opacity, transform', '600ms');
+}
+
+header .top .center .logos-box a:hover{
+	opacity: 0.7;
+	transform: scale(1.1);
+}
+
+header .top .center .logos-box a.usaid{
+	width: 220px;
+}
+
+header .top .center .logos-box a.usaid::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include sprite('-2px -2px', 'true');	
+}
+
+header .top .center .logos-box a.csogeorgia{
+	width: 85px;
+}
+
+header .top .center .logos-box a.csogeorgia::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include sprite('-224px -2px', 'true');	
+}
+
+header .top .center .logos-box a.samoqalaqo{
+	width: 122px;
+}
+
+header .top .center .logos-box a.samoqalaqo::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include sprite('-338px -1px', 'true');	
+}
+
+header .top .center .logos-box a.chaertemartvashi{
+	width: 120px;
+}
+
+header .top .center .logos-box a.chaertemartvashi::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../img/chaerte.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+header .top .center .right{
+	@include makeNull;
+	width: 50%;
+	height: 110px;
+	float: right;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+header .top .center .right .wrapper{
+	@include makeNull;
+	width: 100%;
+}
+
+header .top .center .right .wrapper form{
+	@include makeNull;
+	position: relative;
+	float: right;
+	margin-right: 15px;
+}
+
+header .top .center .right .wrapper form input{
+	@include makeNull;
+	width: 147px;
+	height: 33px;
+	color: $color4;
+	border: solid 1px $color2;
+	border-radius: 17px;
+	padding: 0 40px 0 10px;
+	@include trans('width, border-color', '600ms')
+}
+
+header .top .center .right .wrapper form input:focus{
+	width: 220px;
+	outline: 0px;
+	border-color: $color4;
+}
+
+header .top .center .right .wrapper form button{
+	@include makeNull;
+	width: 22px;
+	height: 22px;
+	background-color: transparent;
+	display: block;
+	position: absolute;
+	top: calc(50% - 11px);
+	right: 15px;
+	text-indent: -9999px;
+}
+
+header .top .center .right .wrapper form button::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include sprite('-481px -3px');
+	background-color: $color4;
+}
+
+header .top .center .right .wrapper .languages-box{
+	@include makeNull;
+	width: 120px;
+	height: 33px;
+	position: relative;
+	float: right;
+	background-color: $color2;
+	border-radius: 17px;
+}
+
+header .top .center .right .wrapper .languages-box::after{
+	content: "";
+	width: 60px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $color1;
+	border-radius: 22px;
+	@include trans('left', '600ms');
+	z-index: 1;
+}
+
+header .top .center .right .wrapper .languages-box.az-active::after{
+	left: 0;
+}
+
+header .top .center .right .wrapper .languages-box.ka-active::after{
+	left: 60px;
+}
+
+header .top .center .right .wrapper .languages-box.az-hover::after{
+	left: 0;
+}
+
+header .top .center .right .wrapper .languages-box.ka-hover::after{
+	left: 60px;
+}
+
+header .top .center .right .wrapper .languages-box a{
+	@include makeNull;
+	width: 60px;
+	height: 33px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: $color4;
+	float: left;
+	position: relative;
+	z-index: 2;
+	@include trans('color', '600ms');
+}
+
+header .top .center .right .wrapper .languages-box.ka-active a.ka{
+	color: $white;
+}
+
+header .top .center .right .wrapper .languages-box.az-active a.az{
+	color: $white;
+}
+
+header .top .center .right .wrapper .languages-box.az-hover a.ka{
+	color: $color4;
+}
+
+header .top .center .right .wrapper .languages-box.az-hover a.az{
+	color: $white;
+}
+
+header .top .center .right .wrapper .languages-box.ka-hover a.ka{
+	color: $white;
+}
+
+header .top .center .right .wrapper .languages-box.ka-hover a.az{
+	color: $color4;
+}
+
+header .top .center .right .wrapper .burger{
+	@include makeNull;
+	float: right;
+	margin-left: 40px;
+	position: relative;
+	width: 30px;
+	height: 20px;
+	margin-top: 6.5px;
+	background-color: transparent;
+	display: block;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+header .top .center .right .wrapper .burger:focus{
+	outline: 0;
+}
+
+header .top .center .right .wrapper .burger em{
+	@include makeNull;
+	width: 100%;
+	height: 3px;
+	background-color: $color4;
+	position: absolute;
+	top: calc(50% - 1.5px);
+	left: 0;
+	display: block;
+	text-indent: -9999px;
+	font-style: normal;
+}
+
+header .top .center .right .wrapper .burger em:first-child{
+	top: 0;
+	@include trans('transform', '600ms');
+}
+
+header .top .center .right .wrapper .burger em:last-child{
+	top: unset;
+	bottom: 0;
+	@include trans('transform', '600ms');
+}
+
+header .top .center .right .wrapper .burger[data-nav='open'] em:nth-child(2){
+	display: none;
+}
+
+header .top .center .right .wrapper .burger[data-nav='open'] em{
+	top: calc(50% - 1.5px);
+}
+
+header .top .center .right .wrapper .burger[data-nav='open'] em:first-child{
+	transform: rotate(45deg);
+}
+
+header .top .center .right .wrapper .burger[data-nav='open'] em:last-child{
+	transform: rotate(-45deg);
+}
+
+header .top .center .navigation-box{
+	@include makeNull;
+	width: 100%;
+	display: none;
+	background-color: $white;
+	position: absolute;
+	left: 0;
+	top: 110px;
+	padding-top: 80px;
+	border-left: solid 1px $color5;
+	border-right: solid 1px $color5;
+	border-bottom: solid 1px $color5;
+}
+
+header .top .center .navigation-box nav{
+	@include makeNull;
+	width: 100%;
+}
+
+header .top .center .navigation-box nav ul{
+	@include makeNull;
+	width: 100%;
+	list-style-type: none;
+}
+
+header .top .center .navigation-box nav ul li{
+	@include makeNull;
+	width: 100%;
+	display: block;
+	border-top: solid 1px $color2;
+	border-bottom: solid 1px $color2;
+}
+
+header .top .center .navigation-box nav ul li a{
+	@include makeNull;
+	width: 100%;
+	height: 60px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: $color1;
+	background-color: $white;
+	@include trans('background-color, color', '600ms');
+}
+
+header .top .center .navigation-box nav ul li a:hover{
+	background-color: $color1;
+	color: $white;
+}
+
+header .top .center .navigation-box .social-box{
+	@include makeNull;
+	width: 100%;
+	height: 60px;
+	display: block;
+}
+
+header .top .center .navigation-box .social-box ul{
+	@include makeNull;
+	width: 100%;
+	height: 60px;
+	display: block;
+	list-style-type: none;
+	text-align: center;
+}
+
+header .top .center .navigation-box .social-box ul li{
+	@include makeNull;
+	display: inline-block;
+	height: 60px;
+	margin: 0 10px;
+}
+
+header .top .center .navigation-box .social-box ul li a{
+	@include makeNull;
+	width: 30px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	text-indent: -9999px;
+	position: relative;
+	margin-top: 15px;
+}
+
+header .top .center .navigation-box .social-box ul li a::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $color1;
+	@include trans('background-color', '600ms');
+}
+
+header .top .center .navigation-box .social-box ul li a.facebook::after{
+	@include sprite('4px -74px');
+}
+
+header .top .center .navigation-box .social-box ul li a.youtube::after{
+	@include sprite('-27px -75px');
+}
+
+header .top .center .navigation-box .social-box ul li a:hover::after{
+	background-color: $color4;
+}

@@ -31,23 +31,28 @@ $version = "1.0.1";
 			</div>
 
 			<div class="right">
-				<form action="" method="post" class="search-form">
-					<input type="text" name="keyword" class="keyword" value="">
-				</form>
+				<div class="wrapper">
+					<button type="button" class="burger" id="myBurger" data-nav="closed">
+						<em>em</em>
+						<em>em</em>
+						<em>em</em>
+					</button>	
 
-				<div class="languages-box">
-					<a href="" class="">AZ</a>
-					<a href="" class="active">KA</a>
-				</div>
+					<div class="languages-box ka-active">
+						<a href="" class="az">AZ</a>
+						<a href="" class="ka">KA</a>
+					</div>
 
-				<div class="burger">
-					<em>em</em>
-					<em>em</em>
-					<em>em</em>
+					<form action="" method="post" class="search-form" autocomplete="off">
+						<input type="text" name="keyword" class="keyword" value="">
+						<button type="submit" class="submit">submit</button>
+					</form>	
 				</div>
 			</div>
 
-			<div class="navigation-box">
+			<div class="clearer"></div>
+
+			<div class="navigation-box" id="myNav">
 				<nav>
 					<ul>
 						<li><a href="">მთავარი გვერდი</a></li>

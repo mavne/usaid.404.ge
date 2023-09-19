@@ -27,6 +27,53 @@ class VisiableTracker{
 	}
 }
 
+class LanguageBox{
+	hoverAnimationInit(){
+		$(document).on('mouseenter', 'header .top .center .right .wrapper .languages-box a', function(){
+			var className = $(this).attr('class');
+			$('header .top .center .right .wrapper .languages-box').removeClass('ka-hover').removeClass('az-hover').addClass(className+'-hover');
+		});
+
+		$(document).on('mouseleave', 'header .top .center .right .wrapper .languages-box a', function(){
+			$('header .top .center .right .wrapper .languages-box').removeClass('ka-hover').removeClass('az-hover')
+		});
+	}
+
+	run(){
+		this.hoverAnimationInit();
+	}
+}
+
+class Navigation{
+	openCloseInit(){
+		$(document).on('click', 'header .top .center .right .wrapper .burger', function(){
+			var status = $(this).attr('data-nav');
+
+			if(status=="closed"){
+				$(this).attr('data-nav', 'open');
+				$('header .top .center .navigation-box').slideDown();
+			}else{
+				$(this).attr('data-nav', 'closed');
+				$('header .top .center .navigation-box').slideUp();
+			}
+		});
+
+		var $myDiv = $('#myNav');
+		var $myBurger = $('#myBurger');
+
+		$(document).on('click', function(event) {
+	        if (!$myDiv.is(event.target) && !$myDiv.has(event.target).length && !$myBurger.is(event.target) && !$myBurger.has(event.target).length) {
+	            $('header .top .center .right .wrapper .burger').attr('data-nav', 'closed');
+				$('header .top .center .navigation-box').slideUp();
+	        }
+	    });
+	}
+
+	run(){
+		this.openCloseInit();
+	}
+}
+
 class Mobile{
 	constructor(){
 		this.opening = false;
@@ -46,6 +93,14 @@ class Mobile{
 /* VisiableTracker */
 var visiableTracker = new VisiableTracker;
 visiableTracker.run();
+
+/* LanguageBox */
+var languageBox = new LanguageBox;
+languageBox.run();
+
+/* Navigation */
+var navigation = new Navigation;
+navigation.run();
 
 /* Mobile */
 var mobile = new Mobile;

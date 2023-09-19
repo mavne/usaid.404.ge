@@ -1,3 +1,20 @@
 @import 'fonts_ge';
 @import 'variables';
 
+header .top .center .right .wrapper form input{
+	font-family: 'Helvetica-Roman';
+	font-size: 16px;
+	line-height: 100%;
+}
+
+header .top .center .right .wrapper .languages-box a{
+	font-family: 'Roboto-Regular';
+	font-size: 18px;
+	line-height: 33px;
+}
+
+header .top .center .navigation-box nav ul li a{
+	font-family: 'Helvetica-Roman-Caps';
+	font-size: 16px;
+	line-height: 60px;
+}
