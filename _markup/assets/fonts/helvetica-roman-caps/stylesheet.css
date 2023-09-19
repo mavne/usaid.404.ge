@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Helvetica Neue LT GEO 55 Roman';
+    src: url('HelveticaNeueLTGEOCaps-55Rmn.eot');
+    src: url('HelveticaNeueLTGEOCaps-55Rmn.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueLTGEOCaps-55Rmn.woff2') format('woff2'),
+        url('HelveticaNeueLTGEOCaps-55Rmn.woff') format('woff'),
+        url('HelveticaNeueLTGEOCaps-55Rmn.ttf') format('truetype'),
+        url('HelveticaNeueLTGEOCaps-55Rmn.svg#HelveticaNeueLTGEOCaps-55Rmn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

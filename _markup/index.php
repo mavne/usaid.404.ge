@@ -21,7 +21,60 @@ $version = "1.0.1";
 
 
 <header>
-	
+	<div class="top">
+		<div class="center">
+			<div class="logos-box">
+				<a href="" class="usaid">usaid</a>
+				<a href="" class="csogeorgia">csogeorgia</a>
+				<a href="" class="samoqalaqo">samoqalaqo</a>
+				<a href="" class="chaertemartvashi">chaertemartvashi</a>
+			</div>
+
+			<div class="right">
+				<form action="" method="post" class="search-form">
+					<input type="text" name="keyword" class="keyword" value="">
+				</form>
+
+				<div class="languages-box">
+					<a href="" class="">AZ</a>
+					<a href="" class="active">KA</a>
+				</div>
+
+				<div class="burger">
+					<em>em</em>
+					<em>em</em>
+					<em>em</em>
+				</div>
+			</div>
+
+			<div class="navigation-box">
+				<nav>
+					<ul>
+						<li><a href="">მთავარი გვერდი</a></li>
+						<li><a href="">ჩაერთე მართვაში</a></li>
+						<li><a href="">სიახლეები</a></li>
+						<li><a href="">გამოცემები</a></li>
+						<li><a href="">ვიდეო რესურსები</a></li>
+						<li><a href="">ჩვენ შესახებ</a></li>
+						<li><a href="">სასარგებლო ბმულები</a></li>
+						<li><a href="">კონტაქტი</a></li>
+					</ul>
+				</nav>
+
+				<div class="social-box">
+					<ul>
+						<li>
+							<a href="" class="facebook">facebook</a>
+						</li>
+
+						<li>
+							<a href="" class="youtube">youtube</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</div>
 </header>
 
 <main>
