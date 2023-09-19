@@ -1,0 +1,46 @@
+@import 'variables';
+
+::selection{
+	background:$color3;
+	color:$white;
+}
+
+::-moz-selection{
+	background:$color3;
+	color:$white;
+}
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+/* Add background color to the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: $color3;
+}
+
+/* Add hover effect to the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: $color3;
+}
+
+/* Add color to the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: $white;
+}
+
+.center{
+	width: $center;
+	margin: 0 auto;
+}
+
+.clearer{
+	clear: both;
+}
+
+body{
+	@include makeNull;
+}
+

@@ -1,0 +1,75 @@
+@mixin trans($property, $duration) {
+  transition-property: #{$property};
+  transition-duration: #{$duration};
+  transition-timing-function: ease-in-out;
+}
+
+@mixin scroll($width, $track, $thumb, $thumbHover) {
+  /* width */
+	::-webkit-scrollbar {
+	  width: #{$width};
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: #{$track}; 
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #{$thumb}; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #{$thumbHover}; 
+	}
+}
+
+@mixin dropShadow($x, $y, $blur, $spread, $color){
+	-webkit-box-shadow: #{$x} #{$y} #{$blur} #{$spread} #{$color}; 
+	box-shadow: #{$x} #{$y} #{$blur} #{$spread} #{$color};
+}
+
+@mixin pointer {
+	user-select: none;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+@mixin makeNull {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+}
+
+@mixin sprite($position, $image:false) {
+	@if $image{
+		-webkit-background-image: url('../img/sprite.svg');
+		background-image: url('../img/sprite.svg');
+		-webkit-background-size: auto;
+		background-size: auto;
+		-webkit-background-repeat: no-repeat;	
+		background-repeat: no-repeat;	
+		-webkit-background-position: #{$position};
+		background-position: #{$position};
+	}@else{
+		-webkit-mask-image: url('../img/sprite.svg');
+		mask-image: url('../img/sprite.svg');
+		-webkit-mask-size: auto;
+		mask-size: auto;
+		-webkit-mask-repeat: no-repeat;	
+		mask-repeat: no-repeat;	
+		-webkit-mask-position: #{$position};
+		mask-position: #{$position};
+	}
+}
+
+
+$center: 1400px; 
+
+$black: black;
+$white: white;
+$color1: #EA4435;
+$color2: #2D2D2E;

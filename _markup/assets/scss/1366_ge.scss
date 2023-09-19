@@ -1,0 +1,203 @@
+@import 'variables';
+
+@media(max-width: 1367px) and (min-width: 961px){
+	.center{
+		width: $center1367;
+		margin: 0 auto;
+	}
+
+	header .middle .center .search-box{
+		width: 650px;
+	}
+
+	header .middle .center .search-box form.focused button{
+		left: 610px;
+	}
+
+	.g-sticky-menu .center .production-box .navigation-box{
+		width: $center1367;
+	}
+
+	.g-sticky-menu .center .production-box .navigation-box .main ul li a{
+		height: 55px;
+	}
+
+	header .middle .center .search-box input,
+	.g-sticky-menu .center .production-box span,
+	.g-sticky-menu .center .additional-menu ul li a{
+		font-size: 14px;
+	}
+
+	main .center .right .banners li a h3{
+		font-size: 13px;
+	}
+
+	main .center .left .bottom #subslider .owl-stage-outer .owl-stage .owl-item .item .brand{
+		width: 150px;
+		margin-right: 40px;
+	}
+
+	main .center .left .bottom #subslider .owl-stage-outer .owl-stage .owl-item .item .title{
+		margin-left: 40px;
+	}
+
+	main .center .left .bottom #subslider .owl-stage-outer .owl-stage .owl-item .item .brand::after{
+		right: -40px;
+	}
+
+	main .center .left .bottom #subslider{
+		width: 710px;
+	}
+
+	main .center .left .bottom .btns{
+		justify-content: right;
+	}
+
+	main .center .left .mainslider-box #mainslider{
+		height: 400px;
+	}
+
+	main .products-box .center h2{
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	main .products-box .center .products .item .content h3{
+		font-size: 13px;
+	}
+
+	main .products-box .center .products .item .content .bottom .btns{
+		float: left;
+		width: 100%;
+		clear: both;
+	}
+
+	main .discount #discount-slider{
+		height: 620px;
+	}
+
+	main .discount #discount-slider .owl-stage-outer .owl-stage .owl-item{
+		height: 500px;
+	}
+
+	main .discount #discount-slider .owl-stage-outer .owl-stage .owl-item .item .image-box{
+		height: 500px;
+	}
+
+	main .discount #discount-slider .owl-nav{
+		top:242.5px;
+	}
+
+	main .discount #discount-slider .owl-stage-outer .owl-stage .owl-item .item .content .center .box .title .wrapper h2{
+		font-size: 20px;
+	}
+
+	main .discount #discount-slider .owl-stage-outer .owl-stage .owl-item .item .content .center .box .title{
+		width: 510px;
+	}
+
+	main .discount #discount-slider .owl-stage-outer .owl-stage .owl-item .item .content .center .box .price .wrapper .new-price span{
+		font-size: 30px;
+	}
+
+	main .discount #discount-slider .owl-stage-outer .owl-stage .owl-item .item .content .center .box .price .wrapper .old-price strike{
+		font-size: 22px;
+	}
+
+	main .news .news-slider-box,
+	main .news .news-slider-box #news-pic-slider,
+	main .news .news-slider-box #news-pic-slider .owl-stage-outer .owl-stage .owl-item .item .image-box{
+		height: 350px;
+	}
+
+	main .news .news-slider-box #news-pic-slider .owl-stage-outer .owl-stage .owl-item .item .image-box .text-container .text{
+		font-size: 13px;
+		line-height: 15px;
+		min-height: 50px;
+	}
+
+	main .news .center .title-box h2,
+	main .brands .center .title-box h2{
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	main .brands .center .brand-slider .wrapper .item{
+		width: 203.33px;
+		flex-basis: 203.33px;
+		height: 203.33px;
+	}
+
+	main .brands .center .brand-slider .wrapper .item .image-box{
+		width: 180px;
+		height: 180px;
+	}
+
+	main .brands::after{
+		height: 180px;
+		bottom: 20px;
+	}
+
+	main .adresses-box.politic-box .data a{
+		font-size: 13px;
+	}
+
+	footer .top .copyright{
+		font-size: 14px;
+	}
+
+	footer .top h3{
+		font-size: 16px;
+	}
+
+	footer .top .footer-menu ul li a,
+	footer .top .address,
+	footer .shindi-box .center p{
+		font-size: 14px;
+	}
+
+	.product-page main .product-section .left .box .wrapper .accordion-header .accordion-button{
+		font-size: 13px;
+	}
+
+	.product-page main .product-section .right .products .item .content h3{
+		font-size: 13px;
+	}
+
+	.product-page main .product-section .right .products .item .content .bottom .btns{
+		width: 100%;
+		float: left;
+		clear: both;
+	}
+
+	main .product-item .center h1,
+	main .product-item .center .actions-box .price span,
+	main .similar-products .center .title-box h2{
+		font-size: 20px;
+	}
+
+	main .product-item .center .actions-box .info span{
+		font-size: 14px;
+	}
+
+	main .product-item .center .description h2{
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	main .product-item .center .description p,
+	main .product-item .center .additional-data .data p{
+		font-size: 13px;
+	}
+
+	main .similar-products .center #similar-products-slider .item .content h3{
+		font-size: 13px;
+		line-height: 13px;
+	}
+
+	main .similar-products .center #similar-products-slider .item .content .bottom .btns{
+		width: 100%;
+		clear: both;
+		float: left;
+	}
+}
