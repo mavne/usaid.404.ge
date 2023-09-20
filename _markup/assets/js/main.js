@@ -74,6 +74,59 @@ class Navigation{
 	}
 }
 
+class MainSlider{
+	constructor(){
+		this.owl;
+	}
+
+	setBoxHeight(){
+		var total = parseInt($(window).height());
+		var minusHeader = total - 110;
+
+		$('main .main-slider-box').css('height', minusHeader+'px');
+		$('main .main-slider-box #main-slider').css('height', minusHeader+'px');
+
+		this.owl = $('main .main-slider-box #main-slider').owlCarousel({
+			autoplay: true,
+        	smartSpeed:1500,
+		    loop:true,
+		    margin:0,
+		    nav:false,
+		    dots: true,
+        	dotsContainer: '.dots-box',
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    }
+		});
+	}
+
+	changeTextAfterSlide(){
+		this.owl.on('changed.owl.carousel', function(event){
+	        var activeSlide = event.item.index + 1; 
+	        var title = $('.owl-carousel .owl-item').eq(event.item.index).find('.item').data('title'); 
+	        var text = $('.owl-carousel .owl-item').eq(event.item.index).find('.item').data('text'); 
+	        var href = $('.owl-carousel .owl-item').eq(event.item.index).find('.item').data('href'); 
+	        
+	        $('main .main-slider-box .overlay .center .middle .wrapper .text h1').text(title);
+	        $('main .main-slider-box .overlay .center .middle .wrapper .text p').text(text);
+	        $('main .main-slider-box .overlay .center .middle .wrapper .text .readmore').attr('href', href);
+	    });
+	}
+
+	run(){
+		this.setBoxHeight();
+		this.changeTextAfterSlide();
+	}
+}
+
 class Mobile{
 	constructor(){
 		this.opening = false;
@@ -101,6 +154,10 @@ languageBox.run();
 /* Navigation */
 var navigation = new Navigation;
 navigation.run();
+
+/* MainSlider */
+var mainSlider = new MainSlider;
+mainSlider.run();
 
 /* Mobile */
 var mobile = new Mobile;

@@ -46,6 +46,8 @@ body{
 
 header{
 	@include makeNull;
+	position: relative;
+	z-index: 100;
 }
 
 header .top{
@@ -435,7 +437,7 @@ header .top .center .navigation-box .social-box ul li a::after{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: $color1;
+	background-color: $color3;
 	@include trans('background-color', '600ms');
 }
 
@@ -449,4 +451,319 @@ header .top .center .navigation-box .social-box ul li a.youtube::after{
 
 header .top .center .navigation-box .social-box ul li a:hover::after{
 	background-color: $color4;
+}
+
+main{
+	@include makeNull;
+}
+
+main .main-slider-box{
+	@include makeNull;
+	width: 100%;
+	position: relative;
+}
+
+main .main-slider-box #main-slider{
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+main .main-slider-box #main-slider .owl-stage-outer{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+main .main-slider-box #main-slider .owl-stage-outer .owl-stage{
+	height: 100%;
+	position: relative;
+}
+
+main .main-slider-box #main-slider .owl-stage-outer .owl-stage .owl-item{
+	height: 100%;
+	position: relative;
+}
+
+main .main-slider-box #main-slider .owl-stage-outer .owl-stage .owl-item .item{
+	height: 100%;
+	position: relative;
+}
+
+main .main-slider-box #main-slider .owl-stage-outer .owl-stage .owl-item .item .image-box{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+}
+
+main .main-slider-box #main-slider .owl-stage-outer .owl-stage .owl-item .item .image-box img{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	opacity: 0;
+}
+
+main .main-slider-box .overlay{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+	overflow: hidden;
+}
+
+main .main-slider-box .overlay .center{
+	position: relative;
+	height: 100%;
+}
+
+main .main-slider-box .overlay .center .left{
+	@include makeNull;
+	width: 500px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -500px;
+	background-color: rgba(21,111,197,0.4);
+}
+
+main .main-slider-box .overlay .center .right{
+	@include makeNull;
+	width: 500px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: -500px;
+	background-color: rgba(21,111,197,0.4);
+}
+
+main .main-slider-box .overlay .center .topWhiteBg::before{
+	content: "";
+	@include makeNull;
+	width: 100%;
+	height: 80px;
+	background-color: $white;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+main .main-slider-box .overlay .center .middle{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+main .main-slider-box .overlay .center .middle::before{
+	content: "";
+	width: 1px;
+	height: calc(100% - 300px);
+	background-color: $color5;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+main .main-slider-box .overlay .center .middle::after{
+	content: "";
+	width: 1px;
+	height: calc(100% - 300px);
+	background-color: $color5;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper{
+	@include makeNull;
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(21,111,197,0.4);
+	border-top: solid 1px $color5;
+	display: flex;
+	align-items: center;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side{
+	@include makeNull;
+	width: 50%;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .social{
+	@include makeNull;
+	float: left;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .social ul{
+	@include makeNull;
+	list-style-type: none;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .social ul li{
+	@include makeNull;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .social ul li a{
+	@include makeNull;
+	width: 30px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	text-indent: -9999px;
+	position: relative;
+	pointer-events: all;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .social ul li a::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $white;
+	@include trans('background-color', '600ms');
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .social ul li a.facebook::after{
+	@include sprite('4px -74px');
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .social ul li a.youtube::after{
+	@include sprite('-27px -75px');
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .social ul li a:hover::after{
+	background-color: $color1;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box{
+	@include makeNull;
+	float: left;
+	height: 30px;
+	margin-left: 70px;
+	display: flex;
+	align-items: center;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box button{
+	@include makeNull;
+	display: inline-block;
+	margin-right: 15px;
+	width: 18px;
+	height: 18px;
+	text-indent: -9999px;
+	text-decoration: none;
+	text-indent: -9999px;
+	border: solid 1px $white;
+	background-color: transparent;
+	border-radius: 100%;
+	@include trans('background-color, border-color', '600ms');
+	pointer-events: all;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box button:hover,
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box button.active{
+	background-color: $color1;
+	border-color: $color1;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box ul{
+	@include makeNull;
+	list-style-type: none;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box ul li{
+	@include makeNull;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box ul li a{
+	@include makeNull;
+	width: 18px;
+	height: 18px;
+	display: block;
+	text-decoration: none;
+	text-indent: -9999px;
+	border: solid 1px $white;
+	background-color: transparent;
+	border-radius: 100%;
+	@include trans('background-color, border-color', '600ms');
+	pointer-events: all;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box ul li a:hover,
+main .main-slider-box .overlay .center .middle .wrapper .left-side .dots-box ul li a.active{
+	background-color: $color1;
+	border-color: $color1;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .text{
+	@include makeNull;
+	width: 50%;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .text h1{
+	@include makeNull;
+	color: $white;
+	margin-bottom: 20px;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .text p{
+	@include makeNull;
+	color: $white;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .text .readmore{
+	@include makeNull;
+	margin-top: 35px;
+	background-color: $color1;
+	border-radius: 17px;
+	display: inline-block;
+	height: 33px;
+	padding: 0 40px 0 20px;
+	text-decoration: underline;
+	color: $white;
+	position: relative;
+	pointer-events: all;
+	@include trans('background-color, color', '600ms');
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .text .readmore:hover{
+	background-color: $white;
+	color: $color1;
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .text .readmore::after{
+	content: "";
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: calc(50% - 13px);
+	right: 5px;
+	@include sprite('-67px -76px');
+	background-color: $white;
+	@include trans('background-color', '600ms');
+}
+
+main .main-slider-box .overlay .center .middle .wrapper .text .readmore:hover::after{
+	background-color: $color1;
 }

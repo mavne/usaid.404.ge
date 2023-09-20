@@ -83,7 +83,57 @@ $version = "1.0.1";
 </header>
 
 <main>
+	<section class="main-slider-box">
+		<div class="owl-carousel owl-theme" id="main-slider">
+		    <div class="item" data-title="ჩაერთე მართვაში 1" data-text="საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი" data-href="https://google.com">
+		    	<div class="image-box" style="background-image:url('/_markup/assets/img/nature.png')">
+		    		<img src="/_markup/assets/img/nature.png" alt="" loading="lazy">
+		    	</div>
+		    </div>
 
+		    <div class="item" data-title="ჩაერთე მართვაში 2" data-text="საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5" data-href="https://facebook.com">
+		    	<div class="image-box" style="background-image:url('/_markup/assets/img/slide2.jpg')">
+		    		<img src="/_markup/assets/img/nature.png" alt="" loading="lazy">
+		    	</div>
+		    </div>
+
+		    <div class="item" data-title="ჩაერთე მართვაში 3" data-text="საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა 333" data-href="https://youtube.com">
+		    	<div class="image-box" style="background-image:url('/_markup/assets/img/slide3.jpg')">
+		    		<img src="/_markup/assets/img/nature.png" alt="" loading="lazy">
+		    	</div>
+		    </div>
+		</div>
+
+		<div class="overlay">
+			<div class="center">
+				<div class="left topWhiteBg"></div>
+				<div class="right topWhiteBg"></div>
+
+				<div class="middle">
+					<div class="wrapper">
+						<div class="left-side">
+							<div class="social">
+								<ul>
+									<li><a href="" class="facebook">facebook</a></li>
+									<li><a href="" class="youtube">youtube</a></li>
+								</ul>
+							</div>
+
+							<div class="dots-box">
+							</div>
+						</div>
+
+						<div class="text">
+							<h1>ჩაერთე მართვაში 1</h1>
+							<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი</p>
+
+							<a href="https://google.com" class="readmore" target="_blank">გაიგე მეტი</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
 
 <footer>
