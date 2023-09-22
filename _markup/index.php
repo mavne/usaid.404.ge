@@ -2,7 +2,7 @@
 $version = "1.0.1";
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +17,6 @@ $version = "1.0.1";
 	<link rel="stylesheet" type="text/css" href="/_markup/assets/css/responsive_ge.css?v=<?=$version?>">
 </head>
 <body class="home">
-
-
 
 <header>
 	<div class="top">
@@ -43,7 +41,7 @@ $version = "1.0.1";
 						<a href="" class="ka">KA</a>
 					</div>
 
-					<form action="" method="post" class="search-form" autocomplete="off">
+					<form action="https://usaid.404.ge/_markup/" method="post" class="search-form" autocomplete="off">
 						<input type="text" name="keyword" class="keyword" value="">
 						<button type="submit" class="submit">submit</button>
 					</form>	
@@ -134,10 +132,125 @@ $version = "1.0.1";
 			</div>
 		</div>
 	</section>
+
+	<section class="about-us">
+		<div class="center">
+			<div class="wrapper">
+				<div class="left">
+					<h2>ჩვენ შესახებ</h2>
+
+					<div class="text">
+						<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის
+						საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის
+						ტიპის საგამომცემლო პროგრამებმა, რომლებშიც Lorem Ipsum-ის სხვადასხვა</p>
+
+						<a href="">მეტის ნახვა</a>
+					</div>
+				</div>
+
+				<div class="right">
+					<div class="image-box">
+						<div class="image" style="background-image:url('/_markup/assets/img/about.jpg')">
+							<img src="/_markup/assets/img/about.jpg" alt="" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news-box">
+		<div class="center">
+			<h2>სიახლეები</h2>
+			<div class="clearer"></div>
+		</div>
+	</section>
 </main>
 
 <footer>
+	<div class="center">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="footer-nav">
+					<nav>
+						<ul>
+							<li><a href="">მთავარი</a></li>
+							<li><a href="">სიახლეები</a></li>
+							<li><a href="">გამოცემები</a></li>
+							<li><a href="">ვიდეო რესურსები</a></li>
+							<li><a href="">ჩვენ შესახებ</a></li>
+							<li><a href="">პროექტის შესახებ</a></li>
+							<li><a href="">კონტაქტი</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 
+			<div class="col-md-4">
+				<div class="middle">
+					<div class="wrapper">
+						<p>ვებ-გვერდი დამზადებულია სამოქალაქო საზოგადოების ინსტიტუტის მიერ USAID-ის ადგილობრივი თვითმმართველობის პროგრამის მხარდაჭერით</p>
+
+						<div class="logos">
+							<a href="" class="samoqalaqo">samoqalaqo</a>
+							<a href="" class="csogeorgia">csogeorgia</a>
+						</div>
+
+						<button type="button" class="e-bulletin"><span>ელ-ბიულეტენი</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="social">
+					<a href="" class="youtube">youtube</a>
+					<a href="" class="facebook">facebook</a>
+				</div>
+
+				<div class="contaxt-info">
+					<div class="wrapper">
+						<ul>
+							<li>
+								<em class="address">address</em>
+								<div class="data">
+									<h3>მისამართი</h3>
+									<p>საბეჭდი და ტიპოგრაფიულ ინდუსტრიის უშინაარსო</p>
+								</div>
+								<div class="clearer"></div>
+							</li>
+
+							<li>
+								<em class="phone">phone</em>
+								<div class="data">
+									<h3>ტელეფონი</h3>
+									<a href="">+995 555 12 34 56</a>
+								</div>
+								<div class="clearer"></div>
+							</li>
+
+							<li>
+								<em class="email">email</em>
+								<div class="data">
+									<h3>ელ.ფოსტა</h3>
+									<a href="">usaid@gmail.com</a>
+								</div>
+								<div class="clearer"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<div class="center">
+			<div class="wrapper">
+				<p>ყველა უფლება დაცულია ©2023</p>
+				<a href="" class="shindi">shindi</a>
+			</div>
+		</div>
+	</div>
 </footer>
 
 

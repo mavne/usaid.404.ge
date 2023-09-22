@@ -1,12 +1,12 @@
 @import 'variables';
 
 ::selection{
-	background:$color3;
+	background:$color1;
 	color:$white;
 }
 
 ::-moz-selection{
-	background:$color3;
+	background:$color1;
 	color:$white;
 }
 
@@ -18,12 +18,12 @@
 
 /* Add background color to the scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: $color3;
+  background-color: $color1;
 }
 
 /* Add hover effect to the scrollbar thumb */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: $color3;
+  background-color: $color1;
 }
 
 /* Add color to the scrollbar track */
@@ -766,4 +766,548 @@ main .main-slider-box .overlay .center .middle .wrapper .text .readmore::after{
 
 main .main-slider-box .overlay .center .middle .wrapper .text .readmore:hover::after{
 	background-color: $color1;
+}
+
+main .about-us{
+	@include makeNull;
+	margin: 74px 0 130px 0;
+	opacity: 0;
+	@include trans('opacity', '1200ms');
+}
+
+main .about-us.g-visible{
+	opacity: 1;
+}
+
+main .about-us .center .wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+}
+
+main .about-us .center .wrapper .left{
+	@include makeNull;
+	width: 50%;
+	position: relative;
+	z-index: 2;
+}
+
+main .about-us .center .wrapper .left h2{
+	@include makeNull;
+	width: 100%;
+	height: 74px;
+	color: $white;
+	background-color: $color1;
+	text-align: center;
+}
+
+main .about-us .center .wrapper .left .text{
+	@include makeNull;
+	padding: 60px 15px 95px 15px;
+	border: solid 1px $color1;
+}
+
+main .about-us .center .wrapper .left .text p{
+	@include makeNull;
+	margin-bottom: 45px;
+	color: $color4;
+}
+
+main .about-us .center .wrapper .left .text a{
+	@include makeNull;
+	display: inline-block;
+	text-decoration: none;
+	color: $color3;
+	position: relative;
+	@include trans('color', '600ms');
+}
+
+main .about-us .center .wrapper .left .text a:hover{
+	color: $color1;
+}
+
+main .about-us .center .wrapper .left .text a::before{
+	content: "";
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: $color3;
+	@include trans('background-color', '600ms');
+}
+
+main .about-us .center .wrapper .left .text a:hover::before{
+	background-color: $color1;
+}
+
+main .about-us .center .wrapper .left .text a::after{
+	content: "";
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: calc(50% - 13px);
+	right: -40px;
+	@include sprite('-67px -76px');
+	background-color: $color3;
+	@include trans('background-color, transform', '600ms');
+}
+
+main .about-us .center .wrapper .left .text a:hover::after{
+	background-color: $color1;
+	transform: translateX(10px);
+}
+
+main .about-us .center .wrapper .right{
+	@include makeNull;
+	width: 50%;
+}
+
+main .about-us .center .wrapper .right::before{
+	content: "";
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: $color1;
+	z-index: 1;
+	@include trans('top', '600ms');
+}
+
+main .about-us.g-visible .center .wrapper .right::before{
+	top: 74px;
+}
+
+main .about-us .center .wrapper .right .image-box{
+	@include makeNull;
+	width: 50%;
+	height: 322px;
+	border: solid 1px $color5;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	overflow: hidden;
+}
+
+main .about-us .center .wrapper .right .image-box .image{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	@include trans('transform', '600ms');
+}
+
+main .about-us .center .wrapper .right .image-box:hover .image{
+	transform: scale(1.1);
+}
+
+main .about-us .center .wrapper .right .image-box .image img{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	opacity: 0;
+}
+
+main .news-box{
+	@include makeNull;
+	width: 100%;
+	min-height: 450px;
+	background-color: $color1;
+}
+
+main .news-box .center{
+	position: relative;
+}
+
+main .news-box .center h2{
+	@include makeNull;
+	width: 50%;
+	height: 74px;
+	float: right;
+	background-color: $white;
+	color: $color1;
+	text-align: center;
+}
+
+footer{
+	@include makeNull;
+	margin-top: 70px;
+	width: 100%;
+	opacity: 0;
+	@include trans('opacity', '1200ms');
+}
+
+footer.g-visible{
+	opacity: 1;
+}
+
+footer .footer-nav{
+	@include makeNull;
+	width: 100%;
+}
+
+footer .footer-nav nav{
+	@include makeNull;
+	width: 100%;
+}
+
+footer .footer-nav nav ul{
+	@include makeNull;
+	width: 100%;
+	list-style-type: none;
+}
+
+footer .footer-nav nav ul li{
+	@include makeNull;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+footer .footer-nav nav ul li:last-child{
+	margin-bottom: 0px;
+}
+
+footer .footer-nav nav ul li a{
+	@include makeNull;
+	display: inline-block;
+	margin-left: 22px;
+	position: relative;
+	color: $color3;
+	text-decoration: none;
+	@include trans('color', '600ms');
+}
+
+footer .footer-nav nav ul li a:hover{
+	color: $color1;
+}
+
+footer .footer-nav nav ul li a::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -22px;
+	bottom: 0;
+	background-color: $color3;
+	@include sprite('-93px -79px');
+	@include trans('background-color', '600ms');
+}
+
+footer .footer-nav nav ul li a:hover::before{
+	background-color: $color1;
+}
+
+footer .footer-nav nav ul li a::after{
+	content: "";
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: $color3;
+}
+
+footer .middle{
+	@include makeNull;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+}
+
+footer .middle .wrapper{
+	@include makeNull;
+	width: 320px;
+}
+
+footer .middle .wrapper p{
+	@include makeNull;
+	width: 100%;
+	color: $color4;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+footer .middle .wrapper .logos{
+	@include makeNull;
+	width: 220px;
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .middle .wrapper .logos a{
+	@include makeNull;
+	height: 60px;
+	display: block;
+	text-decoration: none;
+	text-indent: -9999px;
+	position: relative;
+	@include trans('transform', '600ms');
+}
+
+footer .middle .wrapper .logos a:hover{
+	transform: scale(1.1);
+}
+
+footer .middle .wrapper .logos a.csogeorgia{
+	width: 85px;
+}
+
+footer .middle .wrapper .logos a.csogeorgia::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include sprite('-224px -2px', 'true');	
+}
+
+footer .middle .wrapper .logos a.samoqalaqo{
+	width: 112px;
+}
+
+footer .middle .wrapper .logos a.samoqalaqo::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include sprite('-338px -1px', 'true');	
+}
+
+footer .middle .wrapper button{
+	@include makeNull;
+	height: 55px;
+	line-height: 55px;
+	border-radius: 10px;
+	background-color: $color3;
+	padding: 0 90px 0 60px;
+	display: block;
+	@include trans('background-color', '600ms');
+}
+
+footer .middle .wrapper button:hover{
+	background-color: $color1;
+}
+
+footer .middle .wrapper button span{
+	@include makeNull;
+	display: inline-block;
+	position: relative;
+	color: $color6;
+}
+
+footer .middle .wrapper button span::before{
+	content: "";
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: $color6;
+}
+
+footer .middle .wrapper button span::after{
+	content: "";
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: calc(50% - 13px);
+	right: -35px;
+	@include sprite('-67px -76px');
+	background-color: $color6;
+}
+
+footer .center .social{
+	@include makeNull;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 55px;
+}
+
+footer .center .social a{
+	@include makeNull;
+	width: 30px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	text-indent: -9999px;
+	position: relative;
+	margin: 0 20px;
+	transform: scale(1.25);
+}
+
+footer .center .social a::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $color3;
+	@include trans('background-color', '600ms');
+}
+
+footer .center .social a.facebook::after{
+	@include sprite('4px -74px');
+}
+
+footer .center .social a.youtube::after{
+	@include sprite('-27px -75px');
+}
+
+footer .center .social a:hover::after{
+	background-color: $color1;
+}
+
+footer .center .contaxt-info{
+	@include makeNull;
+	width: 100%;
+	display: flex;
+	justify-content: right;
+}
+
+footer .center .contaxt-info .wrapper{
+	@include makeNull;
+	width: 300px;
+}
+
+footer .center .contaxt-info ul{
+	@include makeNull;
+	width: 100%;
+	list-style-type: none;
+}
+
+footer .center .contaxt-info ul li{
+	@include makeNull;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+footer .center .contaxt-info ul li:last-child{
+	margin-bottom: 0px;
+}
+
+footer .center .contaxt-info ul li em{
+	@include makeNull;
+	display: block;
+	font-style: normal;
+	position: relative;
+	width: 25px;
+	height: 25px;
+	text-indent: -9999px;
+	float: left;
+}
+
+footer .center .contaxt-info ul li em::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $color3;
+}
+
+footer .center .contaxt-info ul li em.address::before{
+	@include sprite('-192px -76px');
+}
+
+footer .center .contaxt-info ul li em.phone::before{
+	@include sprite('-155px -76px');
+}
+
+footer .center .contaxt-info ul li em.email::before{
+	@include sprite('-121px -76px');
+}
+
+footer .center .contaxt-info ul li .data{
+	@include makeNull;
+	display: block;
+	float: left;
+	width: calc(100% - 50px);
+	margin-left: 25px;
+}
+
+footer .center .contaxt-info ul li .data h3{
+	@include makeNull;
+	color: $color3;
+	mix-blend-mode: multiply;
+}
+
+footer .center .contaxt-info ul li .data p{
+	@include makeNull;
+	color: $color4;
+}
+
+footer .center .contaxt-info ul li .data a{
+	@include makeNull;
+	color: $color4;
+	text-decoration: none;
+	display: inline-block;
+	@include trans('color', '600ms');
+}
+
+footer .center .contaxt-info ul li .data a:hover{
+	color: $color1;
+}
+
+footer .copyright{
+	@include makeNull;
+	width: 100%;
+	height: 50px;
+	margin-top: 40px;	
+	border-top: solid 1px rgba(112,112,112,0.3);
+}
+
+footer .copyright .center .wrapper{
+	@include makeNull;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+footer .copyright .center .wrapper p{
+	@include makeNull;
+	width: 50%;
+	text-align: left;
+	color: $color4;
+}
+
+footer .copyright .center .wrapper a.shindi{
+	@include makeNull;
+	width: 62px;
+	height: 22px;
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	top: 14px;
+	right: 0;
+}
+
+footer .copyright .center .wrapper a.shindi::after{
+	@include makeNull;
+	content: "";
+	width: 100%;
+	height: 100%;
+	@include sprite('-230px -74px', 'true');
+	position: absolute;
+	top: 0;
+	left: 0;
 }
