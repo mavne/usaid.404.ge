@@ -1299,6 +1299,11 @@ footer .copyright .center .wrapper a.shindi{
 	position: absolute;
 	top: 14px;
 	right: 0;
+	@include trans('opacity', '600ms');
+}
+
+footer .copyright .center .wrapper a.shindi:hover{
+	opacity: 0.7;
 }
 
 footer .copyright .center .wrapper a.shindi::after{
