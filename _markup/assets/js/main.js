@@ -136,19 +136,82 @@ class News{
 		}
 	}
 
-	forEachCards(scales){
+	forEachCards(scales, zIndexMaxId){
 		$('main .news-box .mouseHoverChangeScale .card').each(function(){
 			var cardI = $(this).attr('data-i');
+
+			
+
 			if(cardI==1){
-				$(this).css('transform', 'scale('+scales[0]+')');
+				if(zIndexMaxId==1){
+					var zIndex = 5;
+				}else if(zIndexMaxId == 2){
+					var zIndex = 4;
+				}else if(zIndexMaxId == 3){
+					var zIndex = 3;
+				}else if(zIndexMaxId == 4){
+					var zIndex = 2;
+				}else if(zIndexMaxId == 5){
+					var zIndex = 1;
+				}
+
+				$(this).css({'transform':'scale('+scales[0]+')', 'z-index': zIndex});
 			}else if(cardI==2){
-				$(this).css('transform', 'scale('+scales[1]+')');
+				if(zIndexMaxId==1){
+					var zIndex = 4;
+				}else if(zIndexMaxId == 2){
+					var zIndex = 5;
+				}else if(zIndexMaxId == 3){
+					var zIndex = 4;
+				}else if(zIndexMaxId == 4){
+					var zIndex = 3;
+				}else if(zIndexMaxId == 5){
+					var zIndex = 2;
+				}
+
+				$(this).css({'transform':'scale('+scales[1]+')', 'z-index': zIndex});
 			}else if(cardI==3){
-				$(this).css('transform', 'scale('+scales[2]+')');
+				if(zIndexMaxId==1){
+					var zIndex = 3;
+				}else if(zIndexMaxId == 2){
+					var zIndex = 4;
+				}else if(zIndexMaxId == 3){
+					var zIndex = 5;
+				}else if(zIndexMaxId == 4){
+					var zIndex = 4;
+				}else if(zIndexMaxId == 5){
+					var zIndex = 3;
+				}
+
+				$(this).css({'transform':'scale('+scales[2]+')', 'z-index': zIndex});
 			}else if(cardI==4){
-				$(this).css('transform', 'scale('+scales[3]+')');
+				if(zIndexMaxId==1){
+					var zIndex = 2;
+				}else if(zIndexMaxId == 2){
+					var zIndex = 3;
+				}else if(zIndexMaxId == 3){
+					var zIndex = 4;
+				}else if(zIndexMaxId == 4){
+					var zIndex = 5;
+				}else if(zIndexMaxId == 5){
+					var zIndex = 4;
+				}
+
+				$(this).css({'transform':'scale('+scales[3]+')', 'z-index': zIndex});
 			}else if(cardI==5){
-				$(this).css('transform', 'scale('+scales[4]+')');
+				if(zIndexMaxId==1){
+					var zIndex = 1;
+				}else if(zIndexMaxId == 2){
+					var zIndex = 2;
+				}else if(zIndexMaxId == 3){
+					var zIndex = 3;
+				}else if(zIndexMaxId == 4){
+					var zIndex = 4;
+				}else if(zIndexMaxId == 5){
+					var zIndex = 5;
+				}
+
+				$(this).css({'transform':'scale('+scales[4]+')', 'z-index': zIndex});
 			}
 		});
 	}
@@ -156,23 +219,25 @@ class News{
 	changeScalesInit(){
 		var that = this;
 		$(document).on('mouseenter', 'main .news-box .mouseHoverChangeScale .card', function(){
+			$('main .news-box .mouseHoverChangeScale .card').removeClass('active');
+			$(this).addClass('active');
 			var i = $(this).attr('data-i');
 
 			if(i==1){
 				var scales = ['1.2', '1.15', '1.1', '1.05', '1.0'];
-				that.forEachCards(scales);
+				that.forEachCards(scales, 1);
 			}else if(i==2){
 				var scales = ['1.15', '1.2', '1.15', '1.1', '1.05'];
-				that.forEachCards(scales);
+				that.forEachCards(scales, 2);
 			}else if(i==3){
 				var scales = ['1.1', '1.15', '1.2', '1.15', '1.1'];
-				that.forEachCards(scales);
+				that.forEachCards(scales, 3);
 			}else if(i==4){
 				var scales = ['1.0', '1.1', '1.15', '1.2', '1.15'];
-				that.forEachCards(scales);
+				that.forEachCards(scales, 4);
 			}else if(i==5){
 				var scales = ['1.0', '1.05', '1.1', '1.15', '1.2'];
-				that.forEachCards(scales);
+				that.forEachCards(scales, 5);
 			}
 		});
 	}

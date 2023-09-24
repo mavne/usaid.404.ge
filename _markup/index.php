@@ -165,14 +165,98 @@ $version = "1.0.1";
 			<div class="clearer"></div>
 
 			<div class="cards">
-				<a href="" class="card" data-i="1">1</a>
-				<a href="" class="card" data-i="2">2</a>
-				<a href="" class="card" data-i="3">3</a>
-				<a href="" class="card" data-i="4">4</a>
-				<a href="" class="card" data-i="5">5</a>
+				<a href="" class="card" data-i="1">
+					<div class="image-box">
+						<div class="image" style="background-image:url('/_markup/assets/img/nature.png')">
+							<img src="/_markup/assets/img/nature.png" alt="" loading="lazy">
+						</div>
+					</div>
+
+					<div class="content">
+						<em class="date">24.09.2023</em>
+
+						<h3>საბეჭდი და ტიპოგრაფიული</h3>
+
+						<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის</p>
+					</div>
+
+					<div class="readmore"><span>გაიგე მეტი</span></div>
+				</a>
+				<a href="" class="card" data-i="2">
+					<div class="image-box">
+						<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg')">
+							<img src="/_markup/assets/img/slide2.jpg" alt="" loading="lazy">
+						</div>
+					</div>
+
+					<div class="content">
+						<em class="date">24.09.2023</em>
+
+						<h3>საბეჭდი და ტიპოგრაფიული</h3>
+
+						<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის</p>
+					</div>
+
+					<div class="readmore"><span>გაიგე მეტი</span></div>
+				</a>
+				<a href="" class="card active" data-i="3">
+					<div class="image-box">
+						<div class="image" style="background-image:url('/_markup/assets/img/slide3.jpg')">
+							<img src="/_markup/assets/img/slide3.jpg" alt="" loading="lazy">
+						</div>
+					</div>
+
+					<div class="content">
+						<em class="date">24.09.2023</em>
+
+						<h3>საბეჭდი და ტიპოგრაფიული</h3>
+
+						<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის</p>
+					</div>
+
+					<div class="readmore"><span>გაიგე მეტი</span></div>
+				</a>
+				<a href="" class="card" data-i="4">
+					<div class="image-box">
+						<div class="image" style="background-image:url('/_markup/assets/img/nature.png')">
+							<img src="/_markup/assets/img/nature.png" alt="" loading="lazy">
+						</div>
+					</div>
+
+					<div class="content">
+						<em class="date">24.09.2023</em>
+
+						<h3>საბეჭდი და ტიპოგრაფიული</h3>
+
+						<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის</p>
+					</div>
+
+					<div class="readmore"><span>გაიგე მეტი</span></div>
+				</a>
+				<a href="" class="card" data-i="5">
+					<div class="image-box">
+						<div class="image" style="background-image:url('/_markup/assets/img/slide3.jpg')">
+							<img src="/_markup/assets/img/slide3.jpg" alt="" loading="lazy">
+						</div>
+					</div>
+
+					<div class="content">
+						<em class="date">24.09.2023</em>
+
+						<h3>საბეჭდი და ტიპოგრაფიული</h3>
+
+						<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის</p>
+					</div>
+
+					<div class="readmore"><span>გაიგე მეტი</span></div>
+				</a>
 				<div class="clearer"></div>
 			</div>
 			<div class="clearer"></div>
+
+			<div class="allnews">
+				<a href="">ყველა სიახლის ნახვა</a>
+			</div>
 		</div>
 	</section>
 </main>
