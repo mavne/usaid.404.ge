@@ -939,6 +939,52 @@ main .news-box .center h2{
 	text-align: center;
 }
 
+main .news-box .cards{
+	display: none;
+}
+
+main .news-box .mouseHoverChangeScale{
+	@include makeNull;
+	display: block;
+	width: 100%;
+	margin: 150px 0 45px 0;
+	position: relative;
+	padding-bottom: 117px;
+}
+
+main .news-box .mouseHoverChangeScale .card{
+	@include makeNull;
+	width: 20%;
+	height: 500px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 500px;
+	display: block;
+	position: relative;
+	background-color: red;
+	float: left;
+	border-radius: 0px;
+	@include trans('transform', '600ms');
+}
+
+main .news-box .mouseHoverChangeScale .card:nth-child(1),
+main .news-box .mouseHoverChangeScale .card:nth-child(5){
+	transform: scale(1.0);
+	z-index: 1;
+}
+
+
+main .news-box .mouseHoverChangeScale .card:nth-child(2),
+main .news-box .mouseHoverChangeScale .card:nth-child(4){
+	transform: scale(1.1);
+	z-index: 2;
+}
+
+main .news-box .mouseHoverChangeScale .card:nth-child(3){
+	transform: scale(1.2);
+	z-index: 3;
+}
+
 footer{
 	@include makeNull;
 	margin-top: 70px;

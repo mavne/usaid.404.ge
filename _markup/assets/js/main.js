@@ -127,6 +127,61 @@ class MainSlider{
 	}
 }
 
+class News{
+	constructor(){
+		if($('main .news-box .cards .card').length == 5){
+			$('main .news-box .cards').addClass('mouseHoverChangeScale');
+		}else{
+			$('main .news-box .cards').html('Please add 5 news...');
+		}
+	}
+
+	forEachCards(scales){
+		$('main .news-box .mouseHoverChangeScale .card').each(function(){
+			var cardI = $(this).attr('data-i');
+			if(cardI==1){
+				$(this).css('transform', 'scale('+scales[0]+')');
+			}else if(cardI==2){
+				$(this).css('transform', 'scale('+scales[1]+')');
+			}else if(cardI==3){
+				$(this).css('transform', 'scale('+scales[2]+')');
+			}else if(cardI==4){
+				$(this).css('transform', 'scale('+scales[3]+')');
+			}else if(cardI==5){
+				$(this).css('transform', 'scale('+scales[4]+')');
+			}
+		});
+	}
+
+	changeScalesInit(){
+		var that = this;
+		$(document).on('mouseenter', 'main .news-box .mouseHoverChangeScale .card', function(){
+			var i = $(this).attr('data-i');
+
+			if(i==1){
+				var scales = ['1.2', '1.15', '1.1', '1.05', '1.0'];
+				that.forEachCards(scales);
+			}else if(i==2){
+				var scales = ['1.15', '1.2', '1.15', '1.1', '1.05'];
+				that.forEachCards(scales);
+			}else if(i==3){
+				var scales = ['1.1', '1.15', '1.2', '1.15', '1.1'];
+				that.forEachCards(scales);
+			}else if(i==4){
+				var scales = ['1.0', '1.1', '1.15', '1.2', '1.15'];
+				that.forEachCards(scales);
+			}else if(i==5){
+				var scales = ['1.0', '1.05', '1.1', '1.15', '1.2'];
+				that.forEachCards(scales);
+			}
+		});
+	}
+
+	run(){
+		this.changeScalesInit();
+	}
+}
+
 class Mobile{
 	constructor(){
 		this.opening = false;
@@ -158,6 +213,10 @@ navigation.run();
 /* MainSlider */
 var mainSlider = new MainSlider;
 mainSlider.run();
+
+/* News */
+var news = new News;
+news.run();
 
 /* Mobile */
 var mobile = new Mobile;

@@ -163,6 +163,16 @@ $version = "1.0.1";
 		<div class="center">
 			<h2>სიახლეები</h2>
 			<div class="clearer"></div>
+
+			<div class="cards">
+				<a href="" class="card" data-i="1">1</a>
+				<a href="" class="card" data-i="2">2</a>
+				<a href="" class="card" data-i="3">3</a>
+				<a href="" class="card" data-i="4">4</a>
+				<a href="" class="card" data-i="5">5</a>
+				<div class="clearer"></div>
+			</div>
+			<div class="clearer"></div>
 		</div>
 	</section>
 </main>
