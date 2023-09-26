@@ -1484,3 +1484,207 @@ footer .copyright .center .wrapper a.shindi::after{
 	top: 0;
 	left: 0;
 }
+
+.news-page main{
+	background-color: $color2;
+}
+
+.news-page main .all-news{
+	@include makeNull;
+	width: 100%;
+	position: relative;
+}
+
+.news-page main .all-news h1{
+	@include makeNull;
+	width: 536px;
+	height: 74px;
+	float: left;
+	text-align: center;
+	color: $white;
+	background-color: $color1;
+	margin-top: 35px;
+	margin-bottom: 5px;
+}
+
+.news-page main .all-news .timeline{
+	@include makeNull;
+	width: 100%;
+	position: relative;
+}
+
+.news-page main .all-news .timeline .middle-line{
+	@include makeNull;
+	width: 16px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 8px);
+	background-color: rgba(112, 112, 112, 0.2);
+}
+
+.news-page main .all-news .timeline .left-list{
+	@include makeNull;
+	width: 50%;
+	float: left;
+}
+
+.news-page main .all-news .timeline .items-list a{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+.news-page main .all-news .timeline .left-list{
+	padding-top: 230px;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper{
+	@include makeNull;
+	width: 536px;
+	position: relative;
+	display: block;
+	background-color: $white;
+	@include dropShadow('0px', '3px', '10px', '0px', 'rgba(0,0,0,0.1)');
+	border:solid 1px transparent;
+	margin-bottom: 65px;
+	@include trans('border-color', '600ms');
+	z-index: 2;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper:hover{
+	border-color: $color1;
+}
+
+.news-page main .all-news .timeline .left-list a .wrapper{
+	float: left;
+}
+
+.news-page main .all-news .timeline .items-list a::after{
+	content: "";
+	width: calc(100% - 8px);
+	height: 16px;
+	background-color: rgba(112, 112, 112, 0.2);
+	position: absolute;
+	top: calc(50% - 8px);
+	left: 0;
+	z-index: 1;
+}
+
+.news-page main .all-news .timeline .right-list a::after{
+	left: unset;
+	right: 0;
+}
+
+.news-page main .all-news .timeline .right-list a .wrapper{
+	float: right;
+}
+
+.news-page main .all-news .timeline .right-list a:first-child::before{
+	content: "";
+	width: 100%;
+	height: calc(50% - 8px);
+	position: absolute;
+	top: 0;
+	left: -8px;
+	background-color: $color2;
+	z-index: 1;
+}
+
+.news-page main .all-news .timeline .left-list a:last-child::before{
+	content: "";
+	width: 100%;
+	height: calc(50% - 8px);
+	position: absolute;
+	bottom: 0;
+	right: -8px;
+	background-color: $color2;
+	z-index: 1;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .image-box{
+	@include makeNull;
+	width: 100%;
+	height: 330px;
+	overflow: hidden;
+	position: relative;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .image-box .image{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	@include trans('transform', '600ms');
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper:hover .image-box .image{
+	transform: scale(1.1);
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .image-box .image img{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	opacity: 0;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .content{
+	@include makeNull;
+	padding: 20px;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .content h2{
+	@include makeNull;
+	color: $color3;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .content em{
+	@include makeNull;
+	display: block;
+	font-style: normal;
+	position: relative;
+	color: $color4;
+	margin: 15px 0;
+	padding-left: 25px;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .content em::before{
+	content: "";
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: $color4;
+	@include sprite('-305px -77px');
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .content p{
+	@include makeNull;
+	color: $color4;
+}
+
+.news-page main .all-news .timeline .items-list a .wrapper .content .more{
+	@include makeNull;
+	color: $color3;
+	text-decoration: underline;
+	display: inline-block;
+	clear: both;
+	margin-top: 25px;
+}
+
+.news-page main .all-news .timeline .right-list{
+	@include makeNull;
+	width: 50%;
+	float: left;
+}
