@@ -46,7 +46,10 @@ body{
 
 header{
 	@include makeNull;
-	position: relative;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: 100;
 }
 
@@ -455,6 +458,7 @@ header .top .center .navigation-box .social-box ul li a:hover::after{
 
 main{
 	@include makeNull;
+	margin-top: 110px;
 }
 
 main .main-slider-box{
@@ -1674,6 +1678,10 @@ footer .copyright .center .wrapper a.shindi::after{
 	color: $color4;
 }
 
+.news-page.video-page main .all-news .timeline .items-list a .wrapper .content p{
+	margin-top: 25px;
+}
+
 .news-page main .all-news .timeline .items-list a .wrapper .content .more{
 	@include makeNull;
 	color: $color3;
@@ -1687,4 +1695,348 @@ footer .copyright .center .wrapper a.shindi::after{
 	@include makeNull;
 	width: 50%;
 	float: left;
+}
+
+.news-page main .all-news .pagination{
+	@include makeNull;
+	width: 536px;
+	height: 40px;
+	float: right;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 10;
+	margin-top: -65px;
+	margin-bottom: 150px;
+}
+
+.news-page main .all-news .pagination ul{
+	@include makeNull;
+	list-style-type: none;
+}
+
+.news-page main .all-news .pagination ul li{
+	@include makeNull;
+	margin: 0 25px;
+	display: inline-block;
+}
+
+.news-page main .all-news .pagination ul li a{
+	@include makeNull;
+	display: block;
+	text-decoration: none;
+	color: rgba(112,112,112,0.5);
+	@include trans('color', '600ms');
+}
+
+.news-page main .all-news .pagination ul li a.active,
+.news-page main .all-news .pagination ul li a:hover{
+	text-decoration: underline;
+	color: $color3;
+}
+
+main .the-news{
+	@include makeNull;
+	width: 100%;
+}
+
+main .the-news #news-slider{
+	@include makeNull;
+	width: 100%;
+	height: 650px;
+	margin-top: 100px;
+	margin-bottom: 75px;
+	position: relative;
+	float: left;
+}
+
+main .the-news #news-slider .owl-stage-outer{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+main .the-news #news-slider .owl-stage-outer .owl-stage{
+	height: 100%;
+	position: relative;
+}
+
+main .the-news #news-slider .owl-stage-outer .owl-stage .owl-item{
+	height: 100%;
+	position: relative;
+}
+
+main .the-news #news-slider .owl-stage-outer .owl-stage .owl-item .item{
+	height: 100%;
+	position: relative;
+}
+
+main .the-news #news-slider .owl-stage-outer .owl-stage .owl-item .item .image-box{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+}
+
+main .the-news #news-slider .owl-stage-outer .owl-stage .owl-item .item .image-box img{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	opacity: 0;
+}
+
+main .the-news #news-slider .owl-dots{
+	@include makeNull;
+	height: 22px;
+	position: absolute;
+	bottom: -75px;
+	right: 35px;
+}
+
+main .the-news #news-slider .owl-dots button{
+	@include makeNull;
+	width: 22px;
+	height: 22px;
+	border-radius: 100%;
+	border:solid 1px $color3;
+	background-color: transparent;
+	display: inline-block;
+	margin: 0 10px;
+	@include trans('background-color', '600ms');
+}
+
+main .the-news #news-slider .owl-dots button:focus{
+	outline: none;
+}
+
+main .the-news #news-slider .owl-dots button.active,
+main .the-news #news-slider .owl-dots button:hover{
+	background-color: $color3;
+}
+
+main .the-news .center .content{
+	@include makeNull;
+	width: 100%;
+	float: left;
+	margin-top: -40px;
+	margin-bottom: 140px;
+}
+
+main .the-news .center .content h1{
+	@include makeNull;
+	width: 800px;
+	text-align: left;
+	color: $color3;
+}
+
+main .the-news .center .content em{
+	@include makeNull;
+	margin: 20px 0;
+	clear: both;
+	display: inline-block;
+	font-style: normal;
+	padding-left: 25px;
+	position: relative;
+	color: $color4;
+}
+
+main .the-news .center .content em::before{
+	content: "";
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: $color4;
+	@include sprite('-305px -77px');
+}
+
+main .the-news .center .content .text{
+	@include makeNull;
+}
+
+main .the-news .center .content .text p{
+	@include makeNull;
+	margin-bottom: 20px;
+	color: $color4;
+}
+
+main .the-news .center .content .text ol,
+main .the-news .center .content .text ul,{
+	margin: 20px 0;
+}
+
+main .the-news .center .content .text ol li,
+main .the-news .center .content .text ul li{
+	color: $color4;
+}
+
+main .the-news .center .content .text strong,
+main .the-news .center .content .text span{
+	color: $color4;
+}
+
+main .the-news .center .content .text a{
+	@include makeNull;
+	color: $color3;
+	text-decoration: underline;
+}
+
+main .the-news .center .content .share{
+	@include makeNull;
+	margin-top: 35px;
+	clear: both;
+	float: left;
+}
+
+main .the-news .center .content .share a{
+	@include makeNull;
+	display: inline-block;
+	height: 26px;
+	position: relative;
+	color: $color3;
+	text-decoration: none;
+	@include trans('transform', '600ms');
+}
+
+main .the-news .center .content .share a::before{
+	content: "";
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: 3px;
+	background-color: $color3;
+}
+
+main .the-news .center .content .share a:hover{
+	transform: scale(1.1);
+}
+
+main .the-news .center .content .share a::after{
+	content: "";
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 0;
+	right: -30px;
+	background-color: $color3;
+	@include sprite('4px -76px');
+}
+
+main .last-news{
+	@include makeNull;
+	background-color: $color2;
+	padding: 75px 0;
+}
+
+main .last-news .center h2{
+	@include makeNull;
+	width: 536px;
+	height: 74px;
+	float: left;
+	text-align: center;
+	color: $white;
+	background-color: $color1;
+	margin-top: -112px;
+}
+
+main .last-news .center .box{
+	@include makeNull;
+	margin-top: 20px;
+	float: left;
+}
+
+main .last-news .center .box .item{
+	@include makeNull;
+	display: block;
+	text-decoration: none;
+	background-color: $white;
+	@include dropShadow('0px', '3px', '10px', '0px', 'rgba(0,0,0,0.1)');
+	@include trans('transform', '600ms');
+}
+
+main .last-news .center .box .item:hover{
+	transform: translateY(-20px);
+}
+
+main .last-news .center .box .item .image-box{
+	@include makeNull;
+	width: 100%;
+	height: 320px;
+	position: relative;
+	overflow: hidden;
+}
+
+main .last-news .center .box .item .image-box .image{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	@include trans('transform', '600ms');
+}
+
+main .last-news .center .box .item:hover .image-box .image{
+	transform: scale(1.1);
+}
+
+main .last-news .center .box .item .image-box .image img{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	opacity: 0;
+}
+
+main .last-news .center .box .item .content{
+	@include makeNull;
+	padding: 20px;
+}
+
+main .last-news .center .box .row{
+	margin-right: calc(84px / -2);
+	margin-left: calc(84px / -2);
+}
+
+main .last-news .center .box .row>*{
+	padding-right: calc(84px / 2);
+	padding-left: calc(84px / 2);
+}
+
+main .last-news .center .box .item .content h3{
+	@include makeNull;
+	color: $color3;
+}
+
+main .last-news .center .box .item .content em{
+	@include makeNull;
+	display: block;
+	color:$color4;
+	font-style: normal;
+	margin: 15px 0;
+}
+
+main .last-news .center .box .item .content p{
+	@include makeNull;
+	color: $color4;
+}
+
+main .last-news .center .box .item .content .more{
+	@include makeNull;
+	margin-top: 15px;
+	color: $color3;
+	text-decoration: underline;
 }

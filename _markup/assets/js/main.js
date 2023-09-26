@@ -140,8 +140,6 @@ class News{
 		$('main .news-box .mouseHoverChangeScale .card').each(function(){
 			var cardI = $(this).attr('data-i');
 
-			
-
 			if(cardI==1){
 				if(zIndexMaxId==1){
 					var zIndex = 5;
@@ -242,8 +240,32 @@ class News{
 		});
 	}
 
+	newsInsideSlider(){
+		$('#news-slider').owlCarousel({
+			autoplay: true,
+        	smartSpeed:1500,
+		    loop:true,
+		    margin:0,
+		    nav:false,
+		    dots: true,
+        	// dotsContainer: '.dots-box',
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    }
+		});
+	}
+
 	run(){
 		this.changeScalesInit();
+		this.newsInsideSlider();
 	}
 }
 
