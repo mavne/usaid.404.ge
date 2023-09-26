@@ -1493,6 +1493,14 @@ footer .copyright .center .wrapper a.shindi::after{
 	background-color: $color2;
 }
 
+main .all-news{
+	opacity: 0;
+}
+
+main .all-news.g-visible{
+	opacity: 1;
+}
+
 .news-page main .all-news{
 	@include makeNull;
 	width: 100%;
@@ -1870,7 +1878,7 @@ main .the-news .center .content .text p{
 }
 
 main .the-news .center .content .text ol,
-main .the-news .center .content .text ul,{
+main .the-news .center .content .text ul{
 	margin: 20px 0;
 }
 
@@ -2039,4 +2047,223 @@ main .last-news .center .box .item .content .more{
 	margin-top: 15px;
 	color: $color3;
 	text-decoration: underline;
+}
+
+.editions-page main .all-news .editions-box{
+	@include makeNull;
+	width: 100%;
+	float: left;
+	margin-top: 65px;
+}
+
+.editions-page main .all-news .editions-box .row{
+	margin-right: calc(84px / -2);
+	margin-left: calc(84px / -2);
+}
+
+.editions-page main .all-news .editions-box .row>*{
+	padding-right: calc(84px / 2);
+	padding-left: calc(84px / 2);
+}
+
+.editions-page main .all-news .editions-box .edition{
+	@include makeNull;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	margin-bottom: 120px;
+	padding: 0 70px 80px 70px;
+	background-color: $white;
+	@include dropShadow('0px', '3px', '10px', '0px', 'rgba(0,0,0,0.1)');
+}
+
+.editions-page main .all-news .editions-box .edition .year{
+	@include makeNull;
+	height: 46px;
+	padding: 0 45px;
+	background-color: $color1;
+	color: $white;
+	position: absolute;
+	top: 250px;
+	left: 23px;
+	z-index: 1;
+	transform: rotate(-90deg);
+	transform-origin: left;
+	@include trans('background-color', '600ms');
+} 
+
+.editions-page main .all-news .editions-box .edition:hover .year{
+	background-color: $color3;
+}
+
+.editions-page main .all-news .editions-box .edition .image-box{
+	@include makeNull;
+	width: 100%;
+	height: 385px;
+	position: relative;
+	overflow: hidden;
+}
+
+.editions-page main .all-news .editions-box .edition .image-box .image{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+}
+
+.editions-page main .all-news .editions-box .edition .image-box .image img{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+	opacity: 0;
+}
+
+.editions-page main .all-news .editions-box .edition h2{
+	@include makeNull;
+	color: $color3;
+	margin: 22px 0 0 0;
+}
+
+.editions-page main .all-news .editions-box .edition .download{
+	@include makeNull;
+	width: 100%;
+	height: 50px;
+	background-color: $color1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	@include trans('background-color', '600ms');
+}
+
+.editions-page main .all-news .editions-box .edition:hover .download{
+	background-color: $color3;
+}
+
+.editions-page main .all-news .editions-box .edition .download p{
+	@include makeNull;
+	display: inline-block;
+	position: relative;
+	color: $white;
+	padding-right: 35px;
+	text-decoration: underline;
+}
+
+.editions-page main .all-news .editions-box .edition .download p::after{
+	content: "";
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top:calc(50% - 9px);
+	right: 0;
+	background-color: $white;
+	@include sprite('-338px -79px');
+}
+
+.editions-page main .all-news .pagination{
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 55px;
+}
+
+.about-page main{
+	background-color: $color2;
+}
+
+.about-page main h1{
+	@include makeNull;
+	width: 536px;
+	height: 74px;
+	float: left;
+	margin-top: 35px;
+	text-align: center;
+	color: $white;
+	background-color: $color1;
+}
+
+.about-page main .box{
+	@include makeNull;
+	width: 100%;
+	border: solid 1px $color1;
+	padding: 105px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 180px;
+	float: left;
+}
+
+.about-page main .box::before{
+	content: "";
+	width: 536px;
+	height: calc(50% + 80px);
+	position: absolute;
+	left: 0;
+	bottom: -80px;
+	z-index: 1;
+	background-color: $color1;
+}
+
+.about-page main .box .image-box{
+	@include makeNull;
+	width: 536px;
+	min-height: 330px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.about-page main .box .image-box .image{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	@include trans('transform', '600ms');
+}
+
+.about-page main .box:hover .image-box .image{
+	transform: scale(1.1);
+}
+
+.about-page main .box .image-box .image img{
+	@include makeNull;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+	opacity: 0;
+}
+
+.about-page main .box .text{
+	@include makeNull;
+	width: 650px;
+	padding-right: 40px;
+}
+
+.about-page main .box .text p{
+	@include makeNull;
+	margin-bottom: 20px;
+	color: $color4;
+}
+
+.about-page main .box .text ul li,
+.about-page main .box .text ol li,
+.about-page main .box .text strong,
+.about-page main .box .text span{
+	color: $color4;	
 }
