@@ -6,7 +6,7 @@ $version = "1.0.1";
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="/_markup/assets/img/favicon.svg" type="image/svg" sizes="32x32">
+	<link rel="icon" href="/_markup/assets/img/favicon.png" type="image/png" sizes="64x64">
 	<title>USAID</title>
 	<link rel="stylesheet" type="text/css" href="/_markup/assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/_markup/assets/owl/owl.carousel.min.css">
@@ -53,14 +53,14 @@ $version = "1.0.1";
 			<div class="navigation-box" id="myNav">
 				<nav>
 					<ul>
-						<li><a href="">მთავარი გვერდი</a></li>
-						<li><a href="">ჩაერთე მართვაში</a></li>
-						<li><a href="">სიახლეები</a></li>
-						<li><a href="">გამოცემები</a></li>
-						<li><a href="">ვიდეო რესურსები</a></li>
-						<li><a href="">ჩვენ შესახებ</a></li>
-						<li><a href="">სასარგებლო ბმულები</a></li>
-						<li><a href="">კონტაქტი</a></li>
+						<li><a href="/_markup/index.php">მთავარი გვერდი</a></li>
+						<li><a href="/_markup/management.php">ჩაერთე მართვაში</a></li>
+						<li><a href="/_markup/news.php">სიახლეები</a></li>
+						<li><a href="/_markup/editions.php">გამოცემები</a></li>
+						<li><a href="/_markup/video.php">ვიდეო რესურსები</a></li>
+						<li><a href="/_markup/about.php">ჩვენ შესახებ</a></li>
+						<li><a href="#">სასარგებლო ბმულები</a></li>
+						<li><a href="/_markup/contact.php">კონტაქტი</a></li>
 					</ul>
 				</nav>
 
@@ -204,13 +204,13 @@ $version = "1.0.1";
 				<div class="footer-nav">
 					<nav>
 						<ul>
-							<li><a href="">მთავარი</a></li>
-							<li><a href="">სიახლეები</a></li>
-							<li><a href="">გამოცემები</a></li>
-							<li><a href="">ვიდეო რესურსები</a></li>
-							<li><a href="">ჩვენ შესახებ</a></li>
-							<li><a href="">პროექტის შესახებ</a></li>
-							<li><a href="">კონტაქტი</a></li>
+							<li><a href="/_markup/index.php">მთავარი</a></li>
+							<li><a href="/_markup/news.php">სიახლეები</a></li>
+							<li><a href="/_markup/editions.php">გამოცემები</a></li>
+							<li><a href="/_markup/video.php">ვიდეო რესურსები</a></li>
+							<li><a href="/_markup/about.php">ჩვენ შესახებ</a></li>
+							<li><a href="#">პროექტის შესახებ</a></li>
+							<li><a href="/_markup/contact.php">კონტაქტი</a></li>
 						</ul>
 					</nav>
 				</div>

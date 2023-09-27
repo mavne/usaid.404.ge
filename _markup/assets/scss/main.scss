@@ -40,6 +40,10 @@
 	clear: both;
 }
 
+.hideDesktop{
+	display: none;
+}
+
 body{
 	@include makeNull;
 }
@@ -165,6 +169,7 @@ header .top .center .right{
 header .top .center .right .wrapper{
 	@include makeNull;
 	width: 100%;
+	position: relative;
 }
 
 header .top .center .right .wrapper form{

@@ -81,7 +81,12 @@ class MainSlider{
 
 	setBoxHeight(){
 		var total = parseInt($(window).height());
-		var minusHeader = total - 110;
+
+		if($(window).width() <= 960){
+			var minusHeader = total - 210;
+		}else{
+			var minusHeader = total - 110;
+		}		
 
 		$('main .main-slider-box').css('height', minusHeader+'px');
 		$('main .main-slider-box #main-slider').css('height', minusHeader+'px');
@@ -271,16 +276,36 @@ class News{
 
 class Mobile{
 	constructor(){
-		this.opening = false;
+
 	}
 
-	languageMove(){
-		
+	searchOpenCloseInit(){
+		$(document).on('click', '.mobile-search', function(){
+			var opened = $(this).attr('data-opened');
+
+			if(opened == "false"){
+				$(this).attr('data-opened', 'true');
+				$('header .top .center .right .wrapper form').slideDown();
+			}else{
+				$(this).attr('data-opened', 'false');
+				$('header .top .center .right .wrapper form').slideUp();
+			}
+		}).stop();
+
+		var $myDiv = $('header .top .center .right .wrapper form');
+		var $myBurger = $('.mobile-search');
+
+		$(document).on('click', function(event) {
+	        if (!$myDiv.is(event.target) && !$myDiv.has(event.target).length && !$myBurger.is(event.target) && !$myBurger.has(event.target).length) {
+	            $('.mobile-search').attr('data-opened', 'false');
+				$('header .top .center .right .wrapper form').slideUp();
+	        }
+	    });
 	}
 
 	run(){
 		if($(window).width() <= 960){
-			this.languageMove();
+			this.searchOpenCloseInit();
 		}
 	}
 }

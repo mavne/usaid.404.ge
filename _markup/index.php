@@ -1,12 +1,12 @@
 <?php 
-$version = "1.0.1";
+$version = "1.0.3";
 ?>
 <!DOCTYPE html>
 <html lang="ka">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="/_markup/assets/img/favicon.svg" type="image/svg" sizes="32x32">
+	<link rel="icon" href="/_markup/assets/img/favicon.png" type="image/png" sizes="64x64">
 	<title>USAID</title>
 	<link rel="stylesheet" type="text/css" href="/_markup/assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/_markup/assets/owl/owl.carousel.min.css">
@@ -36,6 +36,8 @@ $version = "1.0.1";
 						<em>em</em>
 					</button>	
 
+					<div class="mobile-search hideDesktop" data-opened="false"></div>
+
 					<div class="languages-box ka-active">
 						<a href="" class="az">AZ</a>
 						<a href="" class="ka">KA</a>
@@ -53,14 +55,14 @@ $version = "1.0.1";
 			<div class="navigation-box" id="myNav">
 				<nav>
 					<ul>
-						<li><a href="">მთავარი გვერდი</a></li>
-						<li><a href="">ჩაერთე მართვაში</a></li>
-						<li><a href="">სიახლეები</a></li>
-						<li><a href="">გამოცემები</a></li>
-						<li><a href="">ვიდეო რესურსები</a></li>
-						<li><a href="">ჩვენ შესახებ</a></li>
-						<li><a href="">სასარგებლო ბმულები</a></li>
-						<li><a href="">კონტაქტი</a></li>
+						<li><a href="/_markup/index.php">მთავარი გვერდი</a></li>
+						<li><a href="/_markup/management.php">ჩაერთე მართვაში</a></li>
+						<li><a href="/_markup/news.php">სიახლეები</a></li>
+						<li><a href="/_markup/editions.php">გამოცემები</a></li>
+						<li><a href="/_markup/video.php">ვიდეო რესურსები</a></li>
+						<li><a href="/_markup/about.php">ჩვენ შესახებ</a></li>
+						<li><a href="#">სასარგებლო ბმულები</a></li>
+						<li><a href="/_markup/contact.php">კონტაქტი</a></li>
 					</ul>
 				</nav>
 
@@ -83,7 +85,7 @@ $version = "1.0.1";
 <main>
 	<section class="main-slider-box">
 		<div class="owl-carousel owl-theme" id="main-slider">
-		    <div class="item" data-title="ჩაერთე მართვაში 1" data-text="საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი" data-href="https://google.com">
+		    <div class="item" data-title="ჩაერთე მართვაში 1" data-text="საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია." data-href="https://google.com">
 		    	<div class="image-box" style="background-image:url('/_markup/assets/img/nature.png')">
 		    		<img src="/_markup/assets/img/nature.png" alt="" loading="lazy">
 		    	</div>
@@ -123,7 +125,7 @@ $version = "1.0.1";
 
 						<div class="text">
 							<h1>ჩაერთე მართვაში 1</h1>
-							<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი</p>
+							<p>ჩაერთე მართვაში 1" data-text="საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია.</p>
 
 							<a href="https://google.com" class="readmore" target="_blank">გაიგე მეტი</a>
 						</div>
@@ -268,13 +270,13 @@ $version = "1.0.1";
 				<div class="footer-nav">
 					<nav>
 						<ul>
-							<li><a href="">მთავარი</a></li>
-							<li><a href="">სიახლეები</a></li>
-							<li><a href="">გამოცემები</a></li>
-							<li><a href="">ვიდეო რესურსები</a></li>
-							<li><a href="">ჩვენ შესახებ</a></li>
-							<li><a href="">პროექტის შესახებ</a></li>
-							<li><a href="">კონტაქტი</a></li>
+							<li><a href="/_markup/index.php">მთავარი</a></li>
+							<li><a href="/_markup/news.php">სიახლეები</a></li>
+							<li><a href="/_markup/editions.php">გამოცემები</a></li>
+							<li><a href="/_markup/video.php">ვიდეო რესურსები</a></li>
+							<li><a href="/_markup/about.php">ჩვენ შესახებ</a></li>
+							<li><a href="#">პროექტის შესახებ</a></li>
+							<li><a href="/_markup/contact.php">კონტაქტი</a></li>
 						</ul>
 					</nav>
 				</div>

@@ -3,211 +3,211 @@
 
 header .top .center .right .wrapper form input{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 100%;
 }
 
 header .top .center .right .wrapper .languages-box a{
 	font-family: 'Roboto-Regular';
-	font-size: 18px;
+	font-size: $fs18;
 	line-height: 33px;
 }
 
 header .top .center .navigation-box nav ul li a{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 60px;
 }
 
 main .main-slider-box .overlay .center .middle .wrapper .text h1{
 	font-family: 'Helvetica-Medium-Caps';
-	font-size: 30px;
+	font-size: $fs30;
 	line-height: 30px;
 }
 
 main .main-slider-box .overlay .center .middle .wrapper .text p{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 main .main-slider-box .overlay .center .middle .wrapper .text .readmore{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 33px;
 }
 
 main .about-us .center .wrapper .left h2{
 	font-family: 'HHelvetica-Bold-Caps';
-	font-size: 40px;
+	font-size: $fs40;
 	line-height: 74px;
 }
 
 main .about-us .center .wrapper .left .text p{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 main .about-us .center .wrapper .left .text a{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 main .news-box .center h2{
 	font-family: 'HHelvetica-Bold-Caps';
-	font-size: 40px;
+	font-size: $fs40;
 	line-height: 74px;
 }
 
 footer .footer-nav nav ul li a{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 footer .middle p{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 footer .middle .wrapper button span{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 footer .center .contaxt-info ul li .data h3{
 	font-family: 'Helvetica-Medium-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 footer .center .contaxt-info ul li .data p{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 footer .center .contaxt-info ul li .data a{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 footer .copyright p{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 16px;
 }
 
 main .news-box .mouseHoverChangeScale .card .content em{
 	font-family: 'Helvetica-Roman';
-	font-size: 13px;
+	font-size: $fs13;
 	line-height: 13px;
 }
 
 main .news-box .mouseHoverChangeScale .card .content h3{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 14px;
 }
 
 main .news-box .mouseHoverChangeScale .card .content p{
 	font-family: 'Helvetica-Roman';
-	font-size: 13px;
+	font-size: $fs13;
 	line-height: 16px;
 }
 
 main .news-box .mouseHoverChangeScale .card .readmore span{
 	font-family: 'Roboto-Regular';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 38px;
 }
 
 main .news-box .allnews a{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 16px;
 }
 
 .news-page main .all-news h1{
 	font-family: 'Roboto-Bold';
-	font-size: 40px;
+	font-size: $fs40;
 	line-height: 74px;
 }
 
 .news-page main .all-news .timeline .items-list a .wrapper .content h2{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 .news-page main .all-news .timeline .items-list a .wrapper .content em{
 	font-family: 'Helvetica-Medium-Caps';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 22px;
 }
 
 .news-page main .all-news .timeline .items-list a .wrapper .content p{
 	font-family: 'Helvetica-Roman';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 18px;
 }
 
 .news-page main .all-news .timeline .items-list a .wrapper .content .more{
 	font-family: 'Helvetica-Roman';
-	font-size: 12px;
+	font-size: $fs12;
 	line-height: 12px;
 }
 
 .news-page main .all-news .pagination ul li a{
 	font-family: 'Helvetica-Medium-Caps';
-	font-size: 30px;
+	font-size: $fs30;
 	line-height: 30px;
 }
 
 main .the-news .center .content h1{
 	font-family: 'Helvetica-Medium-Caps';
-	font-size: 30px;
+	font-size: $fs30;
 	line-height: 32px;
 }
 
 main .the-news .center .content em{
 	font-family: 'Helvetica-Medium-Caps';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 22px;
 }
 
 main .the-news .center .content .text p{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 main .the-news .center .content .text a{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 main .the-news .center .content .text span{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 main .the-news .center .content .text ul li{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 main .the-news .center .content .share a{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 26px;
 }
 
@@ -219,55 +219,55 @@ main .last-news .center h2{
 
 main .last-news .center .box .item .content h3{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 main .last-news .center .box .item .content em{
 	font-family: 'Helvetica-Medium';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 14px;
 }
 
 main .last-news .center .box .item .content p{
 	font-family: 'Helvetica-Roman';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 18px;
 }
 
 main .last-news .center .box .item .content .more{
 	font-family: 'Helvetica-Roman';
-	font-size: 12px;
+	font-size: $fs12;
 	line-height: 12px;
 }
 
 .editions-page main .all-news .editions-box .edition .year{
 	font-family: 'Helvetica-Medium';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 46px;
 }
 
 .editions-page main .all-news .editions-box .edition h2{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 .editions-page main .all-news .editions-box .edition .download p{
 	font-family: 'Helvetica-Roman';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 18px;
 }
 
 .about-page main h1{
 	font-family: 'Roboto-Bold';
-	font-size: 40px;
+	font-size: $fs40;
 	line-height: 74px;
 }
 
 .about-page main .box .text p{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
@@ -276,19 +276,19 @@ main .last-news .center .box .item .content .more{
 .about-page main .box .text strong,
 .about-page main .box .text span{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 .contact-page main .contact-content .fb-box p{
 	font-family: 'Helvetica-Roman';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
 
 .contact-page main .contact-content .form-box h2{
 	font-family: 'Helvetica-Medium-Caps';
-	font-size: 30px;
+	font-size: $fs30;
 	line-height: 30px;
 }
 
@@ -299,18 +299,18 @@ main .last-news .center .box .item .content .more{
 .contact-page main .contact-content .form-box form .textarea-box textarea,
 .contact-page main .contact-content .form-box form .textarea-box textarea::placeholder{
 	font-family: 'Helvetica-Roman';
-	font-size: 14px;
+	font-size: $fs14;
 	line-height: 50px;
 }
 
 .contact-page main .contact-content .form-box form button{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 40px;
 }
 
 .management-page main .the-news .center .content .links ul li a{
 	font-family: 'Helvetica-Roman-Caps';
-	font-size: 16px;
+	font-size: $fs16;
 	line-height: 20px;
 }
