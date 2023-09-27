@@ -1113,7 +1113,7 @@ main .news-box .allnews a::after{
 
 footer{
 	@include makeNull;
-	margin-top: 70px;
+	padding-top: 70px;
 	width: 100%;
 	opacity: 0;
 	@include trans('opacity', '1200ms');
@@ -2266,4 +2266,243 @@ main .last-news .center .box .item .content .more{
 .about-page main .box .text strong,
 .about-page main .box .text span{
 	color: $color4;	
+}
+
+.contact-page main{
+	padding-bottom: 80px;
+} 
+
+.contact-page main .contact-content{
+	@include makeNull;
+	width: 100%;
+	padding-top: 70px;
+} 
+
+.contact-page main .contact-content .fb-box{
+	@include makeNull;
+	width: 536px;
+	display: flex;
+	justify-content: center;
+	float: left;
+} 
+
+.contact-page main .contact-content .fb-box p{
+	@include makeNull;
+	width: 400px;
+	text-align: center;
+	color: $color4;
+	margin-bottom: 20px;
+}
+
+.contact-page main .contact-content .fb-box .fb-plugin{
+	@include makeNull;
+	width: 400px;
+	height: 335px;
+	line-height: 335px;
+	text-align: center;
+	color: $white;
+	background-color: red;
+}
+
+.contact-page main .contact-content .form-box{
+	@include makeNull;
+	width: 675px;
+	float: right;
+}
+
+.contact-page main .contact-content .form-box h2{
+	@include makeNull;
+	color: $color3;
+	margin-bottom: 20px;
+}
+
+.contact-page main .contact-content .form-box form{
+	@include makeNull;
+	width: 100%;
+}
+
+.margin-bottom10{
+	margin-bottom: 10px !important;
+}
+
+.contact-page main .contact-content .form-box form .name-email{
+	@include makeNull;
+	width: 100%;
+}
+
+.contact-page main .contact-content .form-box form .name-email input{
+	@include makeNull;
+	width: calc(100% - 275px);
+	height: 50px;
+	padding: 0 20px;
+	float: left;
+	border: solid 1px $color7;
+	border-radius: 32px;
+	color: $color4;
+}
+
+.contact-page main .contact-content .form-box form .name-email .firstname{
+	width: 260px;
+}
+
+.contact-page main .contact-content .form-box form .name-email .email{
+	float: right;
+}
+
+.contact-page main .contact-content .form-box form .name-email input::placeholder{
+	color: rgba(112,112,112,0.5);
+}
+
+.contact-page main .contact-content .form-box form .input-box{
+	@include makeNull;
+	width: 100%;
+}
+
+.contact-page main .contact-content .form-box form .input-box input{
+	@include makeNull;
+	width: 100%;
+	height: 50px;
+	padding: 0 20px;
+	border: solid 1px $color7;
+	border-radius: 32px;
+	color: $color4;
+}
+
+.contact-page main .contact-content .form-box form .input-box input::placeholder{
+	color: rgba(112,112,112,0.5);
+}
+
+.contact-page main .contact-content .form-box form .textarea-box{
+	@include makeNull;
+	width: 100%;
+}
+
+.contact-page main .contact-content .form-box form .textarea-box textarea{
+	@include makeNull;
+	width: 100%;
+	height: 225px;
+	padding: 0 20px;
+	border: solid 1px $color7;
+	border-radius: 32px;
+	color: $color4;
+}
+
+.contact-page main .contact-content .form-box form .textarea-box textarea::placeholder{
+	color: rgba(112,112,112,0.5);
+}
+
+
+.contact-page main .contact-content .form-box form button{
+	@include makeNull;
+	height: 40px;
+	background-color: $color1;
+	border-radius: 20px;
+	color: $white;
+	text-decoration: underline;
+	position: relative;
+	float: right;
+	@include trans('background-color', '600ms');
+}
+
+.contact-page main .contact-content .form-box form button:hover{
+	background-color: $color3;
+}
+
+.contact-page main .contact-content .form-box form button span{
+	@include makeNull;
+	display: inline-block;
+	padding: 0 55px 0 30px;
+	position: relative;
+	text-decoration: underline;
+}
+
+.contact-page main .contact-content .form-box form button span::after{
+	content: "";
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: calc(50% - 13px);
+	right: 15px;
+	@include sprite('-67px -76px');
+	background-color: $white;
+	@include trans('background-color, transform', '600ms');
+}
+
+.management-page footer{
+	border-top: solid 1px $color1;
+}
+
+.management-page main .the-news #news-slider{
+	margin-bottom: 35px;
+}
+
+.management-page main .the-news #news-slider .owl-dots{
+	bottom: -55px;
+}
+
+.management-page main .the-news .center .content h1{
+	margin: 40px 0;
+}
+
+.management-page main .the-news .center .content{
+	margin-bottom: 95px;
+}
+
+.management-page main .the-news .center .content .links{
+	@include makeNull;
+	display: block;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.management-page main .the-news .center .content .links ul{
+	@include makeNull;
+	display: block;
+	width: 100%;
+	list-style-type: none;
+}
+
+.management-page main .the-news .center .content .links ul li{
+	@include makeNull;
+	display: block;
+	width: 100%;
+}
+
+.management-page main .the-news .center .content .links ul li a{
+	@include makeNull;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	min-height: 85px;
+	padding: 25px 440px 25px 135px;
+	border-top: solid 1px rgba(112,112,112,0.3);
+	color: $color4;
+	position: relative;
+	background-color: transparent;
+	@include trans('background-color, color', '600ms');
+}
+
+.management-page main .the-news .center .content .links ul li a:hover{
+	background-color: $color1;
+	color: $white;
+}
+
+.management-page main .the-news .center .content .links ul li:last-child a{
+	border-bottom: solid 1px rgba(112,112,112,0.3);
+}
+
+.management-page main .the-news .center .content .links ul li a::after{
+	content: "";
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: calc(50% - 17px);
+	right: 275px;
+	background-color: $color1;
+	@include sprite('-378px -71px');
+	@include trans('background-color', '600ms');
+}
+
+.management-page main .the-news .center .content .links ul li a:hover::after{
+	background-color: $white;
 }

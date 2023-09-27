@@ -279,3 +279,38 @@ main .last-news .center .box .item .content .more{
 	font-size: 16px;
 	line-height: 20px;
 }
+
+.contact-page main .contact-content .fb-box p{
+	font-family: 'Helvetica-Roman';
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.contact-page main .contact-content .form-box h2{
+	font-family: 'Helvetica-Medium-Caps';
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.contact-page main .contact-content .form-box form .name-email input,
+.contact-page main .contact-content .form-box form .name-email input::placeholder,
+.contact-page main .contact-content .form-box form .input-box input,
+.contact-page main .contact-content .form-box form .input-box input::placeholder,
+.contact-page main .contact-content .form-box form .textarea-box textarea,
+.contact-page main .contact-content .form-box form .textarea-box textarea::placeholder{
+	font-family: 'Helvetica-Roman';
+	font-size: 14px;
+	line-height: 50px;
+}
+
+.contact-page main .contact-content .form-box form button{
+	font-family: 'Helvetica-Roman-Caps';
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.management-page main .the-news .center .content .links ul li a{
+	font-family: 'Helvetica-Roman-Caps';
+	font-size: 16px;
+	line-height: 20px;
+}
