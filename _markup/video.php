@@ -92,7 +92,7 @@ $version = "1.0.1";
 			<div class="timeline">
 				<div class="middle-line"></div>
 
-				<div class="items-list left-list">
+				<div class="my-list">
 					<a href="" class="item">
 						<div class="wrapper">
 							<div class="image-box">
@@ -149,9 +149,7 @@ $version = "1.0.1";
 						</div>
 						<div class="clearer"></div>
 					</a>
-				</div>
 				
-				<div class="items-list right-list">
 					<a href="" class="item">
 						<div class="wrapper">
 							<div class="image-box">

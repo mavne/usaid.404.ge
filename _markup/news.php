@@ -92,8 +92,48 @@ $version = "1.0.1";
 			<div class="timeline">
 				<div class="middle-line"></div>
 
-				<div class="items-list left-list">
-					<a href="" class="item">
+				<div class="my-list">
+					<a href="/_markup/news.inside.php" class="item">
+						<div class="wrapper">
+							<div class="image-box">
+								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
+									<img src="/_markup/assets/img/slide2.jpg" alt="" loading="lazy">
+								</div>
+							</div>
+
+							<div class="content">
+								<h2>როგორ შეიძლებოდა შოვის ტრაგედიის თავიდან არიდებადა როგორ ავირიდოთ მსგავსი 1</h2>
+								<em>03.08.2023</em>
+
+								<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის </p>
+
+								<div class="more">გაიგე მეტი</div>
+							</div>
+						</div>
+						<div class="clearer"></div>
+					</a>
+
+					<a href="/_markup/news.inside.php" class="item">
+						<div class="wrapper">
+							<div class="image-box">
+								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
+									<img src="/_markup/assets/img/slide2.jpg" alt="" loading="lazy">
+								</div>
+							</div>
+
+							<div class="content">
+								<h2>როგორ შეიძლებოდა შოვის ტრაგედიის თავიდან არიდებადა როგორ ავირიდოთ 2</h2>
+								<em>03.08.2023</em>
+
+								<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის </p>
+
+								<div class="more">გაიგე მეტი</div>
+							</div>
+						</div>
+						<div class="clearer"></div>
+					</a>
+
+					<a href="/_markup/news.inside.php" class="item">
 						<div class="wrapper">
 							<div class="image-box">
 								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
@@ -113,7 +153,7 @@ $version = "1.0.1";
 						<div class="clearer"></div>
 					</a>
 
-					<a href="" class="item">
+					<a href="/_markup/news.inside.php" class="item">
 						<div class="wrapper">
 							<div class="image-box">
 								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
@@ -133,7 +173,27 @@ $version = "1.0.1";
 						<div class="clearer"></div>
 					</a>
 
-					<a href="" class="item">
+					<a href="/_markup/news.inside.php" class="item">
+						<div class="wrapper">
+							<div class="image-box">
+								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
+									<img src="/_markup/assets/img/slide2.jpg" alt="" loading="lazy">
+								</div>
+							</div>
+
+							<div class="content">
+								<h2>როგორ შეიძლებოდა შოვის ტრაგედიის თავიდან არიდებადა როგორ ავირიდოთ მსგავსი ტრაგედია მომავალში?</h2>
+								<em>03.08.2023</em>
+
+								<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის </p>
+
+								<div class="more">გაიგე მეტი</div>
+							</div>
+						</div>
+						<div class="clearer"></div>
+					</a>
+
+					<a href="/_markup/news.inside.php" class="item">
 						<div class="wrapper">
 							<div class="image-box">
 								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
@@ -153,68 +213,8 @@ $version = "1.0.1";
 						<div class="clearer"></div>
 					</a>
 				</div>
+
 				
-				<div class="items-list right-list">
-					<a href="" class="item">
-						<div class="wrapper">
-							<div class="image-box">
-								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
-									<img src="/_markup/assets/img/slide2.jpg" alt="" loading="lazy">
-								</div>
-							</div>
-
-							<div class="content">
-								<h2>როგორ შეიძლებოდა შოვის ტრაგედიის თავიდან არიდებადა როგორ ავირიდოთ მსგავსი ტრაგედია მომავალში?</h2>
-								<em>03.08.2023</em>
-
-								<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის </p>
-
-								<div class="more">გაიგე მეტი</div>
-							</div>
-						</div>
-						<div class="clearer"></div>
-					</a>
-
-					<a href="" class="item">
-						<div class="wrapper">
-							<div class="image-box">
-								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
-									<img src="/_markup/assets/img/slide2.jpg" alt="" loading="lazy">
-								</div>
-							</div>
-
-							<div class="content">
-								<h2>როგორ შეიძლებოდა შოვის ტრაგედიის თავიდან არიდებადა როგორ ავირიდოთ მსგავსი ტრაგედია მომავალში?</h2>
-								<em>03.08.2023</em>
-
-								<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის </p>
-
-								<div class="more">გაიგე მეტი</div>
-							</div>
-						</div>
-						<div class="clearer"></div>
-					</a>
-
-					<a href="" class="item">
-						<div class="wrapper">
-							<div class="image-box">
-								<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg');">
-									<img src="/_markup/assets/img/slide2.jpg" alt="" loading="lazy">
-								</div>
-							</div>
-
-							<div class="content">
-								<h2>როგორ შეიძლებოდა შოვის ტრაგედიის თავიდან არიდებადა როგორ ავირიდოთ მსგავსი ტრაგედია მომავალში?</h2>
-								<em>03.08.2023</em>
-
-								<p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის </p>
-
-								<div class="more">გაიგე მეტი</div>
-							</div>
-						</div>
-						<div class="clearer"></div>
-					</a>
-				</div>
 
 				<div class="clearer"></div>
 			</div>
