@@ -520,4 +520,178 @@
 		font-size: $fs12;
 		line-height: 16px;
 	}
+
+	.contact-page main .contact-content{
+		padding-top: 20px;
+	}
+
+	.contact-page main .contact-content .fb-box{
+		width: 100%;
+		display: block;
+		float: none;
+	}
+
+	.contact-page main .contact-content .fb-box p{
+		width: 100%;
+		font-size: $fs13;
+	}
+
+	.contact-page main .contact-content .fb-box .fb-plugin{
+		width: 100%;
+		height: 300px;
+		line-height: 300px;
+	}
+
+	.contact-page main .contact-content .form-box{
+		width: 100%;
+	}
+
+	.contact-page main .contact-content .form-box h2{
+		margin-top: 20px;
+	}
+
+	.contact-page main .contact-content .form-box form .name-email input{
+		width: 48%;
+		height: 40px;
+	}
+
+	.contact-page main .contact-content .form-box form .name-email .firstname{
+		width: 48%;
+	}
+
+	.contact-page main .contact-content .form-box form .name-email input, .contact-page main .contact-content .form-box form .name-email input::placeholder, .contact-page main .contact-content .form-box form .input-box input, .contact-page main .contact-content .form-box form .input-box input::placeholder, .contact-page main .contact-content .form-box form .textarea-box textarea, .contact-page main .contact-content .form-box form .textarea-box textarea::placeholder{
+		font-size: $fs12;
+		line-height: 40px;
+	}
+
+	.contact-page main .contact-content .form-box form .input-box input{
+		height: 40px;
+	}
+
+	.contact-page main .contact-content .form-box form .textarea-box textarea{
+		height: 180px;
+	}
+
+	.contact-page main .contact-content .form-box form button{
+		font-size: $fs14;
+	}
+
+	.contact-page main{
+		padding-bottom: 40px;
+	}
+
+	.contact-page main .contact-content .form-box h2{
+		font-size: $fs20;
+		line-height: 20px;
+	}
+
+	.news-page main .all-news h1{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		font-size: $fs20;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.editions-page main .all-news .editions-box{
+		margin-top: 0px;
+		overflow: hidden;
+	}
+
+	.editions-page main .all-news .editions-box .edition{
+		margin-bottom: 20px;
+		padding: 0 70px 50px 70px;
+	}
+
+	.editions-page main .all-news .editions-box .edition .image-box{
+		height: 280px;
+	}
+
+	.editions-page main .all-news .editions-box .edition h2{
+		font-size: $fs12;
+		margin: 10px 0 0 0;
+	}
+
+	.editions-page main .all-news .editions-box .edition .year {
+	    padding: 0 30px;
+	    top: 170px;
+	}
+
+	.editions-page main .all-news .editions-box .edition .download{
+		height: 40px;
+	}
+
+	.editions-page main .all-news .editions-box .edition .download p{
+		font-size: $fs12;
+	}
+
+	.editions-page main .all-news .pagination{
+		margin-bottom: 20px;
+	}
+
+	.news-page main .all-news .pagination ul li{
+		margin: 0 10px;
+	}
+
+	.news-page main .all-news .pagination ul li a{
+		font-size: $fs20;
+		line-height: 20px;
+	}
+
+	main .the-news #news-slider{
+		height: 350px;
+	}
+
+	.management-page main .the-news #news-slider{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.management-page main .the-news #news-slider .owl-dots{
+		width: 100%;
+		bottom: 30px;
+		right: 0;
+		height: unset;
+		text-align: center;
+	}
+
+	main .the-news #news-slider .owl-dots button{
+		width: 16px;
+		height: 16px;
+		border: solid 1px $white;
+		margin: 0 7px;
+	}
+
+	main .the-news #news-slider .owl-dots button.active, main .the-news #news-slider .owl-dots button:hover{
+		background-color: $white;
+	}
+
+	.management-page main .the-news .center .content h1{
+		margin: 10px 0;
+		font-size: $fs20;
+		line-height: 20px;
+		width: 100%;
+	}
+
+	main .the-news .center .content .text p, main .the-news .center .content .text span{
+		font-size: $fs12;
+		line-height: 18px;
+	}
+
+	.management-page main .the-news .center .content{
+		margin-bottom: 40px;
+	}
+
+	.management-page main .the-news .center .content .links ul li a{
+		padding: 15px 50px 15px 0px;
+		font-size: $fs12;
+		line-height: 16px;
+	}
+
+	.management-page main .the-news .center .content .links ul li a::after{
+		right: 0px;
+		transform: scale(0.8);
+		transform-origin: right;
+	}
 }

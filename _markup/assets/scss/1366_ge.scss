@@ -128,4 +128,83 @@
 	footer .center .contaxt-info ul li .data h3{
 		font-size: $fs14;
 	}
+
+	.about-page main h1{
+		font-size: $fs36;
+	}
+
+	.about-page main .box .text p{
+		font-size: $fs14;
+	}
+
+	.contact-page main .contact-content .form-box h2{
+		font-size: $fs26;
+		line-height: 26px;
+	}
+
+	.news-page main .all-news h1{
+		font-size: $fs36;
+	}
+
+	.editions-page main .all-news .editions-box{
+		margin-top: 55px;
+	}
+
+	.editions-page main .all-news .editions-box .edition{
+		padding: 0 70px 65px 70px;
+		margin-bottom: 60px;
+	}
+
+	.editions-page main .all-news .editions-box .row{
+		margin-right: calc(60px / -2);
+		margin-left: calc(60px / -2);
+	}
+
+	.editions-page main .all-news .editions-box .row>*{
+		padding-right: calc(60px / 2);
+		padding-left: calc(60px / 2);
+	}
+
+	.editions-page main .all-news .editions-box .edition .image-box{
+		height: 330px;
+	}
+
+	.editions-page main .all-news .editions-box .edition h2{
+		font-size: $fs14;
+		margin:15px 0 0 0;
+	}
+
+	.editions-page main .all-news .editions-box .edition .year{
+		padding: 0 40px;
+		top: 200px;
+	}
+
+	.editions-page main .all-news .pagination{
+		margin-top: 0px;
+	}
+
+	main .the-news .center .content h1{
+		font-size: $fs26;
+	}
+
+	main .the-news .center .content .text p,
+	main .the-news .center .content .text span{
+		font-size: $fs14;
+		line-height: 18px;
+	}
+
+	.management-page main .the-news .center .content .links{
+		margin-top: 40px;
+	}
+
+	.management-page main .the-news .center .content .links ul li a{
+		font-size: $fs14;
+		line-height: 18px;
+		min-height: unset;
+		padding: 15px 440px 15px 135px;	
+	}
+
+	.management-page main .the-news .center .content{
+		margin-bottom: 80px;
+	}
 }
