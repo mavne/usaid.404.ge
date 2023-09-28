@@ -36,6 +36,8 @@ $version = "1.0.1";
 						<em>em</em>
 					</button>	
 
+					<div class="mobile-search hideDesktop" data-opened="false"></div>
+
 					<div class="languages-box ka-active">
 						<a href="" class="az">AZ</a>
 						<a href="" class="ka">KA</a>

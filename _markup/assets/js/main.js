@@ -335,10 +335,42 @@ class Mobile{
 		});
 	}
 
+	insideNewsMoreSliderInit(){
+		var newDiv = $("<div>").addClass('owl-carousel owl-theme').attr('id', 'mobileNewsSlider');
+		var html = '';
+		$('.news-inside-page main .last-news .center .box .row .col-md-4').each(function(){
+			html += $('a', this).prop('outerHTML');
+		});
+
+		newDiv.html(html);
+
+		$('.news-inside-page main .last-news .center .box').after(newDiv);
+
+		$('#mobileNewsSlider').owlCarousel({
+			autoplay: true,
+        	smartSpeed:1500,
+		    loop:false,
+		    nav:true,
+		    dots: false,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    }
+		});
+	}
+
 	run(){
 		if($(window).width() <= 960){
 			this.searchOpenCloseInit();
 			this.homeNewsInit();
+			this.insideNewsMoreSliderInit();
 		}
 	}
 }

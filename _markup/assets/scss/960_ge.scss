@@ -325,7 +325,7 @@
 		min-height: 550px;
 	}
 
-	main .news-box #mobileNewsSlider{
+	#mobileNewsSlider{
 		@include makeNull;
 		width: 100%;
 		height: 400px;
@@ -334,30 +334,30 @@
 		margin: 40px 0 0 0;
 	} 
 
-	main .news-box #mobileNewsSlider .owl-stage-outer{
+	#mobileNewsSlider .owl-stage-outer{
 		@include makeNull;
 		width: 100%;
 		height: 100%;
 		position: relative;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage{
+	#mobileNewsSlider .owl-stage-outer .owl-stage{
 		height: 100%;
 		position: relative;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item{
 		height: 100%;
 		position: relative;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item{
 		height: 100%;
 		position: relative;
 		text-decoration: none;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box{
 		@include makeNull;
 		width: 100%;
 		height: 200px;
@@ -365,7 +365,7 @@
 		overflow: hidden;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box .image{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box .image{
 		@include makeNull;
 		width: 100%;
 		height: 100%;
@@ -376,7 +376,7 @@
 		background-position: center;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box .image img{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box .image img{
 		@include makeNull;
 		width: 100%;
 		height: 100%;
@@ -385,13 +385,13 @@
 		opacity: 0;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content{
 		@include makeNull;
 		background-color: $white;
 		padding: 10px;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content .date{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content .date{
 		@include makeNull;
 		font-style: normal;
 		color: $color3;
@@ -402,7 +402,7 @@
 		display: block;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content h3{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content h3{
 		@include makeNull;
 		display: block;
 		color: $color4;
@@ -411,7 +411,7 @@
     	line-height: 14px;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content p{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content p{
 		@include makeNull;
 		margin: 10px 0;
 		color: $color4;
@@ -420,7 +420,7 @@
 		line-height: 14px;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .readmore{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .readmore{
 		@include makeNull;
 		width: 100%;
     	height: 30px;
@@ -428,7 +428,7 @@
     	background-color: $color2;
 	}
 
-	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .readmore span{
+	#mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .readmore span{
 		@include makeNull;
 		display: inline-block;
 		padding-right: 30px;
@@ -439,7 +439,7 @@
 		line-height: 30px;
 	}
 
-	main .news-box #mobileNewsSlider .owl-nav{
+	#mobileNewsSlider .owl-nav{
 		@include makeNull;
 		width: 100%;
 		height: 40px;
@@ -450,7 +450,7 @@
 		z-index: 10;
 	}
 
-	main .news-box #mobileNewsSlider .owl-nav button{
+	#mobileNewsSlider .owl-nav button{
 		@include makeNull;
 		width: 40px;
 		height: 40px;
@@ -461,7 +461,7 @@
 		border-radius: 100%;
 	}
 
-	main .news-box #mobileNewsSlider .owl-nav button::after{
+	#mobileNewsSlider .owl-nav button::after{
 		content: "";
 		width: 100%;
 		height: 100%;
@@ -473,18 +473,19 @@
 		transform: scale(0.6);
 	}
 
-	main .news-box #mobileNewsSlider .owl-nav button span{
+	#mobileNewsSlider .owl-nav button span{
 		display: none;
 	}
 
-	main .news-box #mobileNewsSlider .owl-nav button.owl-prev{
+	#mobileNewsSlider .owl-nav button.owl-prev{
 		float: left;
 	}
-	main .news-box #mobileNewsSlider .owl-nav button.owl-next{
+	
+	#mobileNewsSlider .owl-nav button.owl-next{
 		float: right;
 	}
 
-	main .news-box #mobileNewsSlider .owl-nav button.owl-prev::after{
+	#mobileNewsSlider .owl-nav button.owl-prev::after{
 		transform: rotate(180deg) scale(0.6);	
 	}
 
@@ -693,5 +694,126 @@
 		right: 0px;
 		transform: scale(0.8);
 		transform-origin: right;
+	}
+
+	main .the-news #news-slider .owl-dots{
+		bottom: 30px;
+		right: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	main .the-news .center .content h1,
+	main .last-news .center h2{
+		width: 100%;
+	}
+
+	main .the-news .center .content h1{
+		font-size: $fs20;
+		line-height: 24px;
+	}
+
+	.news-inside-page main .the-news .center .content em{
+		margin: 5px 0;
+	}
+
+	main .the-news .center .content .text a{
+		font-size: $fs12;
+		line-height: 18px;
+	}
+
+	main .the-news .center .content .text ol, main .the-news .center .content .text ul{
+		margin: 10px 0;
+	}
+
+	main .the-news .center .content .share{
+		margin-top: 0px;
+	}
+
+	main .the-news .center .content .share a{
+		font-size: $fs12;
+		line-height: 18px;
+	}
+
+	main .the-news .center .content .share a::after{
+		transform: scale(0.8);
+	}
+
+	.news-inside-page main .last-news .center h2{
+		font-size: $fs20;
+		line-height: 50px;
+		height: 50px;
+	}
+
+	main .last-news{
+		padding: 40px 0;
+	}
+
+	.news-inside-page main .last-news{
+		padding: 40px 0 0 0;
+	}
+
+	.news-inside-page main .last-news .center .box{
+		display: none;
+	}
+
+	main .last-news .center h2{
+		margin-top: -65px;
+	}
+
+	.news-inside-page #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content em{
+		@include makeNull;
+		display: block;
+		font-style: normal;
+		color:$color4;
+		margin-top: 10px;
+		font-family: 'Helvetica-Medium-Caps';
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	.news-inside-page #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content .more{
+		@include makeNull;
+		width: 100%;
+    	height: 30px;
+    	background-color: $color2;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	position: relative;
+	}
+
+	.news-inside-page #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content .more span{
+		@include makeNull;
+		display: inline-block;
+		padding-right: 30px;
+		color: $color1;
+		font-family: 'Roboto-Regular';
+    	font-size: 12px;
+    	line-height: 12px;
+	}
+
+	.news-inside-page #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content .more span::after{
+		content: "";
+		width: 26px;
+		height: 26px;
+		position: absolute;
+		top: calc(50% - 13px);
+		right: 100px;
+		@include sprite('-67px -76px');
+		background-color: $color1;
+	}
+
+	.news-inside-page main .the-news #news-slider{
+		margin-bottom: 0px;
+	}
+
+	.news-inside-page main .the-news .center .content{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.management-page main .the-news .center .content{
+		margin-bottom: 40px;
 	}
 }
