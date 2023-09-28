@@ -1,5 +1,5 @@
 <?php 
-$version = "1.0.3";
+$version = "1.0.6";
 ?>
 <!DOCTYPE html>
 <html lang="ka">
@@ -167,7 +167,7 @@ $version = "1.0.3";
 			<div class="clearer"></div>
 
 			<div class="cards">
-				<a href="" class="card" data-i="1">
+				<a href="/_markup/news.inside.php" class="card" data-i="1">
 					<div class="image-box">
 						<div class="image" style="background-image:url('/_markup/assets/img/nature.png')">
 							<img src="/_markup/assets/img/nature.png" alt="" loading="lazy">
@@ -184,7 +184,7 @@ $version = "1.0.3";
 
 					<div class="readmore"><span>გაიგე მეტი</span></div>
 				</a>
-				<a href="" class="card" data-i="2">
+				<a href="/_markup/news.inside.php" class="card" data-i="2">
 					<div class="image-box">
 						<div class="image" style="background-image:url('/_markup/assets/img/slide2.jpg')">
 							<img src="/_markup/assets/img/slide2.jpg" alt="" loading="lazy">
@@ -201,7 +201,7 @@ $version = "1.0.3";
 
 					<div class="readmore"><span>გაიგე მეტი</span></div>
 				</a>
-				<a href="" class="card active" data-i="3">
+				<a href="/_markup/news.inside.php" class="card active" data-i="3">
 					<div class="image-box">
 						<div class="image" style="background-image:url('/_markup/assets/img/slide3.jpg')">
 							<img src="/_markup/assets/img/slide3.jpg" alt="" loading="lazy">
@@ -218,7 +218,7 @@ $version = "1.0.3";
 
 					<div class="readmore"><span>გაიგე მეტი</span></div>
 				</a>
-				<a href="" class="card" data-i="4">
+				<a href="/_markup/news.inside.php" class="card" data-i="4">
 					<div class="image-box">
 						<div class="image" style="background-image:url('/_markup/assets/img/nature.png')">
 							<img src="/_markup/assets/img/nature.png" alt="" loading="lazy">
@@ -235,7 +235,7 @@ $version = "1.0.3";
 
 					<div class="readmore"><span>გაიგე მეტი</span></div>
 				</a>
-				<a href="" class="card" data-i="5">
+				<a href="/_markup/news.inside.php" class="card" data-i="5">
 					<div class="image-box">
 						<div class="image" style="background-image:url('/_markup/assets/img/slide3.jpg')">
 							<img src="/_markup/assets/img/slide3.jpg" alt="" loading="lazy">
@@ -257,8 +257,9 @@ $version = "1.0.3";
 			<div class="clearer"></div>
 
 			<div class="allnews">
-				<a href="">ყველა სიახლის ნახვა</a>
+				<a href="/_markup/news.php">ყველა სიახლის ნახვა</a>
 			</div>
+			<div class="clearer"></div>
 		</div>
 	</section>
 </main>

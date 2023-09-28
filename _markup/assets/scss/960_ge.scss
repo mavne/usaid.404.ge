@@ -68,7 +68,7 @@
 	header .top .center .logos-box a.chaertemartvashi{
 		float: none;
 		clear: both;
-		margin: 70px auto 0 auto;
+		margin: 70px 0 0 0;
 	}
 
 	header .top .center .right .wrapper form{
@@ -76,8 +76,11 @@
 	}
 
 	header .top .center .right{
-		width:100%;
+		width:60%;
 		height: 50px;
+		position: absolute;
+		right: 0;
+		bottom: 15px;
 	}
 
 	header .top .center .right .wrapper .languages-box{
@@ -85,7 +88,7 @@
 	}
 
 	header .top .center .navigation-box{
-		top: 210px;
+		top: 160px;
 		padding-top: 0px;
 	}
 
@@ -129,10 +132,10 @@
 	}
 
 	header .top .center .right .wrapper form{
-		width: 100%;
+		width: 166.666%;
 		position: absolute;
-		top: 40px;
-		left: 0;
+		top: 55px;
+		left: -66.666%;
 		background-color: $color2;
 		padding: 15px 0;
 	}
@@ -153,7 +156,7 @@
 	}
 
 	main{
-		margin-top: 210px;
+		margin-top: 160px;
 	}
 
 	main .main-slider-box .overlay .center .middle .wrapper{
@@ -262,6 +265,10 @@
 
 	main .news-box .allnews{
 		position: static;
+		float: left;
+		margin: 15px 0;
+		clear: both;
+		height: unset;
 	}
 
 	main .news-box .allnews a{
@@ -312,5 +319,205 @@
 
 	footer .copyright{
 		margin-top: 20px;
+	}
+
+	main .news-box{
+		min-height: 550px;
+	}
+
+	main .news-box #mobileNewsSlider{
+		@include makeNull;
+		width: 100%;
+		height: 400px;
+		position: relative;
+		overflow: hidden;
+		margin: 40px 0 0 0;
+	} 
+
+	main .news-box #mobileNewsSlider .owl-stage-outer{
+		@include makeNull;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage{
+		height: 100%;
+		position: relative;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item{
+		height: 100%;
+		position: relative;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item{
+		height: 100%;
+		position: relative;
+		text-decoration: none;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box{
+		@include makeNull;
+		width: 100%;
+		height: 200px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box .image{
+		@include makeNull;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-size: cover;
+		background-position: center;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .image-box .image img{
+		@include makeNull;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		opacity: 0;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content{
+		@include makeNull;
+		background-color: $white;
+		padding: 10px;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content .date{
+		@include makeNull;
+		font-style: normal;
+		color: $color3;
+		font-family: 'Helvetica-Roman';
+		font-size: $fs13;
+		line-height: 13px;
+		margin: 0 0 10px 0;
+		display: block;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content h3{
+		@include makeNull;
+		display: block;
+		color: $color4;
+		font-family: 'Helvetica-Roman-Caps';
+    	font-size: $fs14;
+    	line-height: 14px;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .content p{
+		@include makeNull;
+		margin: 10px 0;
+		color: $color4;
+		font-family: 'Helvetica-Roman';
+		font-size: $fs12;
+		line-height: 14px;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .readmore{
+		@include makeNull;
+		width: 100%;
+    	height: 30px;
+    	text-align: center;
+    	background-color: $color2;
+	}
+
+	main .news-box #mobileNewsSlider .owl-stage-outer .owl-stage .owl-item .item .readmore span{
+		@include makeNull;
+		display: inline-block;
+		padding-right: 30px;
+		position: relative;
+		color: $color1;
+		font-family: 'Roboto-Regular';
+		font-size: $fs14;
+		line-height: 30px;
+	}
+
+	main .news-box #mobileNewsSlider .owl-nav{
+		@include makeNull;
+		width: 100%;
+		height: 40px;
+		pointer-events: none;
+		position: absolute;
+		left: 0;
+		top: calc(50% - 20px);
+		z-index: 10;
+	}
+
+	main .news-box #mobileNewsSlider .owl-nav button{
+		@include makeNull;
+		width: 40px;
+		height: 40px;
+		margin: 0 10px;
+		background-color: $color1;
+		position: relative;
+		pointer-events: all;
+		border-radius: 100%;
+	}
+
+	main .news-box #mobileNewsSlider .owl-nav button::after{
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $white;
+		@include sprite('-375px -68px');
+		transform: scale(0.6);
+	}
+
+	main .news-box #mobileNewsSlider .owl-nav button span{
+		display: none;
+	}
+
+	main .news-box #mobileNewsSlider .owl-nav button.owl-prev{
+		float: left;
+	}
+	main .news-box #mobileNewsSlider .owl-nav button.owl-next{
+		float: right;
+	}
+
+	main .news-box #mobileNewsSlider .owl-nav button.owl-prev::after{
+		transform: rotate(180deg) scale(0.6);	
+	}
+
+	.about-page main h1{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		font-size: $fs20;
+	}
+
+	.about-page main .box{
+		padding: 15px;
+		margin-bottom: 40px;
+		display: block;
+	}
+
+	.about-page main .box::before{
+		content: none;
+	}
+
+	.about-page main .box .image-box{
+		width: 100%;
+		height: 220px;
+		margin-bottom: 15px;
+	}
+
+	.about-page main .box .text{
+		width: 100%;
+		padding-right: 0px;
+	}
+
+	.about-page main .box .text p{
+		font-size: $fs12;
+		line-height: 16px;
 	}
 }
